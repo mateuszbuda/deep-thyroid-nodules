@@ -135,7 +135,7 @@ def test(folds):
 		y_true.append(cases_targets[pid])
 		y_id.append(pid)
 	
-	with open('./dl_predictions_mt.csv', 'w') as csvfile:
+	with open('../results/data/predictions_cv.csv', 'w') as csvfile:
 		csvwriter = csv.writer(csvfile)
 		csvwriter.writerow(['ID', 'Prediction', 'Cancer'])
 		for pid, prediction, gt in zip(y_id, y_pred, y_true):
