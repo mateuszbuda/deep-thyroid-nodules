@@ -48,7 +48,7 @@ def validation_ids(fold, total_folds, df_cancer):
 	return val_ids
 
 
-def predict(fold, total_folds):
+def predict(fold, total_folds, test_cases=True):
 	fold_checkpoints_dir = checkpoints_dir.replace('<FOLD>', str(fold))
 	weights_path = os.path.join(fold_checkpoints_dir, 'weights_{}.h5'.format(epoch))
 	
@@ -82,7 +82,8 @@ def predict(fold, total_folds):
 	
 	for f_path in all_files:
 		pid = fname2pid(f_path)
-		if pid in val_ids:
+		append = pid in val_ids if test_cases else pid not in val_ids
+		if append:
 			test_files.append(f_path)
 			X_test.append(np.expand_dims(np.array(imread(f_path, flatten=False, mode='F')).astype(np.float32), axis=-1))
 			y_test_cancer.append(df_cancer[df_cancer.ID == pid].as_matrix().flatten()[1:].astype(np.float32))
@@ -109,38 +110,46 @@ def test(folds):
 	filenames = []
 	predictions = np.zeros((0, nb_categories))
 	targets = []
+	pid_fold = []
 	
 	for f in range(folds):
 		fnames, preds, t = predict(f, folds)
 		predictions = np.vstack((predictions, preds))
 		filenames.extend(fnames)
 		targets.extend(t)
+		pid_fold.extend([f] * len(targets))
 	
-	print(len(filenames))
+	print('{} images'.format(len(filenames)))
 	
 	cases_predictions = {}
 	cases_targets = {}
+	cases_folds = {}
 	for i in range(len(filenames)):
 		pid = fname2pid(filenames[i])
 		prev_pred = cases_predictions.get(pid, np.zeros(nb_categories))
 		preds = predictions[i]
 		cases_predictions[pid] = prev_pred + preds
 		cases_targets[pid] = targets[i]
+		cases_folds[pid] = pid_fold[i]
+	
+	print('{} cases'.format(len(cases_predictions)))
 	
 	y_pred = []
 	y_true = []
 	y_id = []
+	y_fold = []
 	for pid in cases_predictions:
 		y_pred.append(cases_predictions[pid][0])
 		y_true.append(cases_targets[pid])
 		y_id.append(pid)
+		y_fold.append(cases_folds[pid])
 	
 	with open('../results/data/predictions_cv.csv', 'w') as csvfile:
 		csvwriter = csv.writer(csvfile)
-		csvwriter.writerow(['ID', 'Prediction', 'Cancer'])
-		for pid, prediction, gt in zip(y_id, y_pred, y_true):
+		csvwriter.writerow(['ID', 'Prediction', 'Cancer', 'Fold'])
+		for pid, prediction, gt, f in zip(y_id, y_pred, y_true, y_fold):
 			pid = pid.lstrip('0')
-			csvwriter.writerow([pid, prediction, gt[0]])
+			csvwriter.writerow([pid, prediction, gt[0], f])
 	
 	fpr, tpr, thresholds = roc_curve(y_true, y_pred)
 	roc_auc = roc_auc_score(y_true, y_pred)
@@ -163,6 +172,40 @@ def test(folds):
 	plt.close(fig)
 
 
+def test_train(folds):
+	for f in range(folds):
+		filenames, predictions, targets = predict(f, folds, test_cases=False)
+		pid_fold = [f] * len(targets)
+		
+		cases_predictions = {}
+		cases_targets = {}
+		cases_folds = {}
+		for i in range(len(filenames)):
+			pid = fname2pid(filenames[i])
+			prev_pred = cases_predictions.get(pid, np.zeros(nb_categories))
+			preds = predictions[i]
+			cases_predictions[pid] = prev_pred + preds
+			cases_targets[pid] = targets[i]
+			cases_folds[pid] = pid_fold[i]
+		
+		y_pred = []
+		y_true = []
+		y_id = []
+		y_fold = []
+		for pid in cases_predictions:
+			y_pred.append(cases_predictions[pid][0])
+			y_true.append(cases_targets[pid])
+			y_id.append(pid)
+			y_fold.append(cases_folds[pid])
+		
+		with open('../results/data/predictions_cv_train.csv', 'a') as csvfile:
+			csvwriter = csv.writer(csvfile)
+			csvwriter.writerow(['ID', 'Prediction', 'Cancer', 'Fold'])
+			for pid, prediction, gt, fo in zip(y_id, y_pred, y_true, y_fold):
+				pid = pid.lstrip('0')
+				csvwriter.writerow([pid, prediction, gt[0], fo])
+
+
 def fname2pid(fname):
 	return fname.split('/')[-1].split('.')[0].lstrip('0')
 
@@ -177,3 +220,4 @@ if __name__ == '__main__':
 	device = '/gpu:' + sys.argv[1]
 	with tf.device(device):
 		test(int(sys.argv[2]))
+		test_train(int(sys.argv[2]))
