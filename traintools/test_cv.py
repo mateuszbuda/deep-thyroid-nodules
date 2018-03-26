@@ -200,7 +200,8 @@ def test_train(folds):
 		
 		with open('../results/data/predictions_cv_train.csv', 'a') as csvfile:
 			csvwriter = csv.writer(csvfile)
-			csvwriter.writerow(['ID', 'Prediction', 'Cancer', 'Fold'])
+			if f == 0:
+				csvwriter.writerow(['ID', 'Prediction', 'Cancer', 'Fold'])
 			for pid, prediction, gt, fo in zip(y_id, y_pred, y_true, y_fold):
 				pid = pid.lstrip('0')
 				csvwriter.writerow([pid, prediction, gt[0], fo])
