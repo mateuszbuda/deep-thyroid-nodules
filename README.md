@@ -176,6 +176,15 @@ From `detection` folder run:
     mkdir -p /media/maciej/Thyroid/thyroid-nodules/detection/Calipers-cv
     python inference.py
 
+In folder `Nodules-cv-bboxes` there are images with bounding boxes overlaid,
+whereas `Calipers-cv` folder contains csv files with coordinates of bounding boxes for corresponding images.
+
+#### Evaluation
+
+To compute precision@.5IoU and average precision@\[.5:.95\]IoU for a nodule level detection, run evaluation script
+
+    python evaluation.py
+
 #### Postprocessing
 
 From `detection` folder run:
@@ -278,6 +287,9 @@ From `detection` folder run:
     mkdir -p /media/maciej/Thyroid/thyroid-nodules/detection/Nodules-test-bboxes
     mkdir -p /media/maciej/Thyroid/thyroid-nodules/detection/Calipers-test
     python inference_99test.py
+
+In folder `Nodules-test-bboxes` there are images with bounding boxes overlaid,
+whereas `Calipers-test` folder contains csv files with coordinates of bounding boxes for corresponding images.
 
 #### Postprocessing
 
