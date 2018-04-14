@@ -42,49 +42,8 @@ def numpy2png(image, path):
 		pngWriter.write(pngfile, np.reshape(image, (-1, np.prod(image.shape[1:]))))
 
 
-def bboxes_iou(boxA, boxB):
-	boxA = boxA * 1000
-	boxB = boxB * 1000
-	# determine the (x, y)-coordinates of the intersection rectangle
-	yA = max(boxA[0], boxB[0])
-	xA = max(boxA[1], boxB[1])
-	yB = min(boxA[2], boxB[2])
-	xB = min(boxA[3], boxB[3])
-	
-	# compute the area of intersection rectangle
-	interArea = (xB - xA + 1) * (yB - yA + 1)
-	
-	# compute the area of both the prediction and ground-truth
-	# rectangles
-	boxAArea = (boxA[2] - boxA[0] + 1) * (boxA[3] - boxA[1] + 1)
-	boxBArea = (boxB[2] - boxB[0] + 1) * (boxB[3] - boxB[1] + 1)
-	
-	# compute the intersection over union by taking the intersection
-	# area and dividing it by the sum of prediction + ground-truth
-	# areas - the interesection area
-	iou = interArea / float(boxAArea + boxBArea - interArea)
-	
-	# return the intersection over union value
-	return iou
-
-
 def fname2pid(fname):
 	return fname.split('/')[-1].split('.')[0].lstrip('0')
-
-
-def get_gt_bboxes(calipers_path, image_H, image_W):
-	gt_bboxes = []
-	for line in open(calipers_path):
-		values = line.rstrip().split(',')
-		x = float(values[1])
-		y = float(values[0])
-		bbox = np.zeros((4,))
-		bbox[0] = np.max([0.0, (y - 8) / image_H])
-		bbox[1] = np.max([0.0, (x - 8) / image_W])
-		bbox[2] = np.min([1.0, (y + 8) / image_H])
-		bbox[3] = np.min([1.0, (x + 8) / image_W])
-		gt_bboxes.append(bbox)
-		return gt_bboxes
 
 
 def run_inference_for_single_image(image, sess):
@@ -179,10 +138,6 @@ for f in range(10):
 					image_np = np.pad(image_np, ((0, 0), (x_pad_size, x_pad_size), (0, 0)), 'constant')
 				# Actual detection.
 				output_dict = run_inference_for_single_image(image_np, sess)
-				
-				# get ground truth boxes
-				# csv_path = image_path.replace('Nodules', 'Calipers').replace('PNG', 'csv')
-				# gt_bboxes = get_gt_bboxes(csv_path, image_np.shape[0], image_np.shape[1] - (2 * x_pad_size))
 				
 				# get bounding box for the ROI
 				image_gs = np.mean(image_np, axis=-1)
