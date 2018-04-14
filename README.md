@@ -341,3 +341,10 @@ Training predictions are used to compute thresholds for deep learning risk level
 
 Output file for cases in the test set are saved to `results/data/predictions_test.csv` with columns \[`ID`, `Prediction`, `Cancer`\].
 File `results/data/predictions_train.csv` has the same format but contains prediction for the training cases.
+
+## Results analysis and comparison to radiologists
+
+All notebooks that read predictions from deep learning models and compare them to radiologists are in the `results` folder.
+
+    cd results
+    jupyter notebook
