@@ -214,6 +214,14 @@ From `traintools` folder run MatLab function:
     fold=0
     python train_cv.py $gpu $fold
 
+#### Testing
+
+Generating predictions for test and training folds:
+
+    python test_cv.py
+
+Output file for cases in test folds are saved to `results/data/predictions_cv.csv` with columns \[`ID`, `Prediction`, `Cancer`, `Fold`\].
+File `results/data/predictions_cv_train.csv` has the same format but contains prediction for training folds (each example appears 9 times).
 
 ## Reproduction steps for 99 test cases
 
@@ -319,3 +327,17 @@ From `traintools` folder run MatLab function:
     gpu=1
     python train_99test.py $gpu
 
+#### Testing
+
+Generating predictions for test folds:
+
+    python test_99test.py
+
+And for training cases:
+
+    python test_train.py
+
+Training predictions are used to compute thresholds for deep learning risk levels corresponding to TI-RADS risk levels
+
+Output file for cases in the test set are saved to `results/data/predictions_test.csv` with columns \[`ID`, `Prediction`, `Cancer`\].
+File `results/data/predictions_train.csv` has the same format but contains prediction for the training cases.
