@@ -122,7 +122,7 @@ At this point, the folder with images should contain `2556` files.
 Folder structure in root folder `media/maciej/Thyroid/thyroid-nodules`:
 
     + detection
-        + [0-9]  # folder number
+        + [0-9]  # fold number
             + data
             + model
                 + eval
@@ -160,6 +160,85 @@ To follow the performance on a validation set, run:
         --checkpoint_dir /media/maciej/Thyroid/thyroid-nodules/detection/0/model/train/ \
         --eval_dir /media/maciej/Thyroid/thyroid-nodules/detection/0/model/eval/ \
         --pipeline_config_path /media/maciej/Thyroid/thyroid-nodules/detection/0/model/faster_rcnn_resnet101_coco.config
+
+#### Exporting models for inference
+
+    for i in `seq 0 9`; do python export_inference_graph.py --input_type image_tensor \
+        --pipeline_config_path /media/maciej/Thyroid/thyroid-nodules/detection/$i/model/faster_rcnn_resnet101_coco.config \
+        --trained_checkpoint_prefix /media/maciej/Thyroid/thyroid-nodules/detection/$i/model/train/model.ckpt-20000 \
+        --output_directory /media/maciej/Thyroid/thyroid-nodules/detection/$i/model/inference/ ; done
+
+#### Inference
+
+From `detection` folder run:
+
+    mkdir -p /media/maciej/Thyroid/thyroid-nodules/detection/Nodules-cv-bboxes
+    mkdir -p /media/maciej/Thyroid/thyroid-nodules/detection/Calipers-cv
+    python inference.py
+
+In folder `Nodules-cv-bboxes` there are images with bounding boxes overlaid,
+whereas `Calipers-cv` folder contains csv files with coordinates of bounding boxes for corresponding images.
+
+#### Evaluation
+
+To compute precision@.5IoU and average precision@\[.5:.95\]IoU for a nodule level detection, run evaluation script
+
+    python evaluation.py
+
+#### Postprocessing
+
+From `detection` folder run:
+
+    python postprocessing.py '/media/maciej/Thyroid/thyroid-nodules/detection/Calipers-cv/*.csv'
+
+
+### Detection baseline
+
+This section covers only the training set and cross-validation experiment.
+
+#### TF object detection set-up
+
+Folder structure in root folder `media/maciej/Thyroid/thyroid-nodules`:
+
+    + detection-baseline
+        + [0-9]  # fold number
+            + data
+            + model
+                + eval
+                + images
+                + train
+                - faster_rcnn_resnet101_coco.config
+        + fine_tune_ckpt
+            - model.ckpt.data-00000-of-00001
+            - model.ckpt.index
+            - model.ckpt.meta
+        - label_map.pbtxt
+
+The config file `faster_rcnn_resnet101_coco.config` for fold 0 and the label mapping file `label_map.pbtxt` are provided in the `detection-baseline` folder.
+
+`faster_rcnn_resnet101_coco` model checkpoint for initialization can be downloaded from
+[detection_model_zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md).
+
+#### Cross-validation train/valid tfrecord data
+
+Assuming folder structure set-up as in the previous step, generate training data for detection using `csv2tfrecords.py` script in the `detection-baseline` folder:
+
+    for i in `seq 0 9`; do python csv2tfrecords.py $i; done
+
+#### Training
+
+Change directory to `~/models/research/object_detection` and run for all folds:
+
+    python train.py --gpu 1 \
+        --pipeline_config_path /media/maciej/Thyroid/thyroid-nodules/detection-baseline/0/model/faster_rcnn_resnet101_coco.config \
+        --train_dir /media/maciej/Thyroid/thyroid-nodules/detection-baseline/0/model/train/
+
+To follow the performance on a validation set, run:
+
+    python eval.py --gpu 0 \
+        --checkpoint_dir /media/maciej/Thyroid/thyroid-nodules/detection-baseline/0/model/train/ \
+        --eval_dir /media/maciej/Thyroid/thyroid-nodules/detection-baseline/0/model/eval/ \
+        --pipeline_config_path /media/maciej/Thyroid/thyroid-nodules/detection-baseline/0/model/faster_rcnn_resnet101_coco.config
 
 #### Exporting models for inference
 
