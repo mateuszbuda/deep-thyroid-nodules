@@ -230,12 +230,12 @@ for f in range(10):
 				
 				numpy2png(image_np[:, x_pad_size:-x_pad_size - 1, :], img_result_path)
 				
-				for i in range(len(detection_boxes)):
-					bbox = detection_boxes[i]
-					ymin = int(bbox[0] * image_np.shape[0])
-					xmin = int(bbox[1] * image_np.shape[1]) - x_pad_size
-					ymax = int(bbox[2] * image_np.shape[0])
-					xmax = int(bbox[3] * image_np.shape[1]) - x_pad_size
-					with open(csv_result_path, 'a') as f:
-						writer = csv.writer(f)
+				with open(csv_result_path, 'a') as f:
+					writer = csv.writer(f)
+					for i in range(len(detection_boxes)):
+						bbox = detection_boxes[i]
+						ymin = int(bbox[0] * image_np.shape[0])
+						xmin = int(bbox[1] * image_np.shape[1]) - x_pad_size
+						ymax = int(bbox[2] * image_np.shape[0])
+						xmax = int(bbox[3] * image_np.shape[1]) - x_pad_size
 						writer.writerow([(ymin + ymax) / 2, (xmin + xmax) / 2, detection_scores[i]])

@@ -7,23 +7,39 @@ PRED_CSV = '/media/maciej/Thyroid/thyroid-nodules/detection/Calipers-cv'
 GT_CSV_RGX = '/media/maciej/Thyroid/thyroid-nodules/detection/Calipers/*csv'
 
 def get_bbox(calipers_path):
-	bbox_x = []
-	bbox_y = []
+	xmins = []
+	ymins = []
+	xmaxs = []
+	ymaxs = []
+	
 	for line in open(calipers_path):
 		values = line.rstrip().split(',')
 		x = float(values[1])
 		y = float(values[0])
-		bbox_x.append(x)
-		bbox_y.append(y)
+		xmins.append(x - 32)
+		ymins.append(y - 32)
+		xmaxs.append(x + 32)
+		ymaxs.append(y + 32)
 	
-	len_x = (max(bbox_x) - min(bbox_x)) / 2.
-	mid_y = (max(bbox_x) + min(bbox_x)) / 2.
-	len_y = (max(bbox_y) - min(bbox_y)) / 2.
-	mid_x = (max(bbox_y) + min(bbox_y)) / 2.
-	radius = max(len_x, len_y) + 32
+	if len(xmins) == 2:
+		ymid = (min(ymins) + max(ymaxs)) / 2
+		w = max(xmaxs) - min(xmins)
+		ymins.append(ymid - (w / 2))
+		ymaxs.append(ymid + (w / 2))
+		xmid = (min(xmins) + max(xmaxs)) / 2
+		h = max(ymaxs) - min(ymins)
+		xmins.append(xmid - (h / 2))
+		xmaxs.append(xmid + (h / 2))
 	
-	bb = [max(0, mid_y - radius), max(0, mid_x - radius), mid_y + radius, mid_x + radius]
-	return bb
+	xmins = np.maximum(xmins, 0.0)
+	ymins = np.maximum(ymins, 0.0)
+	
+	xmin = min(xmins)
+	ymin = min(ymins)
+	xmax = max(xmaxs)
+	ymax = max(ymaxs)
+	
+	return [ymin, xmin, ymax, xmax]
 
 
 def bboxes_iou(boxA, boxB):
@@ -53,6 +69,8 @@ def bboxes_iou(boxA, boxB):
 files = glob(GT_CSV_RGX)
 
 precisions = []
+hits = []
+misses = []
 for iou in np.linspace(0.5, 0.95, 10):
 	hit_count = 0.
 	for csv_path in files:
@@ -62,7 +80,12 @@ for iou in np.linspace(0.5, 0.95, 10):
 		if bboxes_iou(gt_bbox, pred_bbox) < iou:
 			continue
 		hit_count += 1.
-	precisions.append(hit_count / len(files))
+	precisions.append(np.round(hit_count / len(files) * 100, 2))
+	hits.append(hit_count)
+	misses.append(len(files) - hit_count)
 
 print('Precision@0.5IoU = {}'.format(precisions[0]))
 print('Mean Precision@[.5:.95]IoU = {}'.format(np.mean(precisions)))
+print(precisions)
+print(hits)
+print(misses)
