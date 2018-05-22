@@ -1,14 +1,14 @@
-import numpy as np
-import os
 import csv
-import tensorflow as tf
-
-from random import randint, seed
+import os
 from glob import glob
+from random import randint, seed
+
+import numpy as np
+import png
+import tensorflow as tf
 from PIL import Image
 from medpy.filter.binary import largest_connected_component
 from scipy.ndimage.morphology import binary_dilation
-import png
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 os.environ['CUDA_VISIBLE_DEVICES'] = '1'
@@ -21,6 +21,7 @@ if tf.__version__ < '1.4.0':
 
 from object_detection.utils import label_map_util
 from object_detection.utils import visualization_utils as vis_util
+from evaluation import get_gt_bbox
 
 PATH_TO_LABELS = './label_map.pbtxt'
 NUM_CLASSES = 1
@@ -206,24 +207,8 @@ for f in range(10):
 					detection_scores = detection_scores[:1]
 					detection_classes = detection_classes[:1]
 				
-				# Visualization of the results of a detection.
-				vis_util.visualize_boxes_and_labels_on_image_array(
-					image_np,
-					np.array(detection_boxes),
-					np.array(detection_classes),
-					np.array(detection_scores),
-					category_index,
-					instance_masks=output_dict.get('detection_masks'),
-					use_normalized_coordinates=True,
-					line_thickness=1,
-					min_score_thresh=0.0)
-				
-				img_result_path = os.path.join(PATH_TO_SAVE_IMG, os.path.split(image_path)[-1])
 				csv_result_path = os.path.join(PATH_TO_SAVE_CSV, os.path.split(image_path)[-1])
 				csv_result_path = csv_result_path.replace('PNG', 'csv')
-				
-				numpy2png(image_np[:, x_pad_size:-x_pad_size - 1, :], img_result_path)
-				width = image_np[:, x_pad_size:-x_pad_size - 1, :].shape[1] - 1
 				
 				with open(csv_result_path, 'a') as f:
 					writer = csv.writer(f)
@@ -232,5 +217,31 @@ for f in range(10):
 						ymin = int(bbox[0] * image_np.shape[0])
 						xmin = max(int(bbox[1] * image_np.shape[1]) - x_pad_size, 0)
 						ymax = int(bbox[2] * image_np.shape[0])
-						xmax = min(int(bbox[3] * image_np.shape[1]) - x_pad_size, width)
+						xmax = min(int(bbox[3] * image_np.shape[1]) - x_pad_size, image_np.shape[1] - 1)
 						writer.writerow([ymin, ymax, xmin, xmax, detection_scores[i]])
+				
+				# Visualization of the results of a detection.
+				vis_util.visualize_boxes_and_labels_on_image_array(
+					image_np,
+					np.array(detection_boxes),
+					np.array(detection_classes),
+					np.array(detection_scores),
+					category_index,
+					use_normalized_coordinates=True,
+					line_thickness=4,
+					min_score_thresh=0.0)
+
+				image_np = image_np[:, x_pad_size:-x_pad_size - 1, :]
+				gt_box = get_gt_bbox(image_path.replace('Nodules', 'Calipers').replace('PNG', 'csv'))
+
+				vis_util.visualize_boxes_and_labels_on_image_array(
+					image_np,
+					np.array([gt_box]),
+					np.array([1]),
+					None,
+					category_index,
+					use_normalized_coordinates=False,
+					line_thickness=4)
+
+				img_result_path = os.path.join(PATH_TO_SAVE_IMG, os.path.split(image_path)[-1])
+				numpy2png(image_np, img_result_path)

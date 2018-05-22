@@ -1,10 +1,12 @@
-import numpy as np
 import os
-
 from glob import glob
+from heapq import heappush, heappop
+
+import numpy as np
 
 PRED_CSV = '/media/maciej/Thyroid/thyroid-nodules/detection/Calipers-cv'
 GT_CSV_RGX = '/media/maciej/Thyroid/thyroid-nodules/detection/Calipers/*csv'
+
 
 def get_bbox(calipers_path):
 	xmins = []
@@ -66,26 +68,38 @@ def bboxes_iou(boxA, boxB):
 	return iou
 
 
-files = glob(GT_CSV_RGX)
-
-precisions = []
-hits = []
-misses = []
-for iou in np.linspace(0.5, 0.95, 10):
-	hit_count = 0.
-	for csv_path in files:
-		gt_bbox = get_bbox(csv_path)
-		pred_bbox_path = os.path.join(PRED_CSV, os.path.split(csv_path)[1])
-		pred_bbox = get_bbox(pred_bbox_path)
-		if bboxes_iou(gt_bbox, pred_bbox) < iou:
-			continue
-		hit_count += 1.
-	precisions.append(np.round(hit_count / len(files) * 100, 2))
-	hits.append(hit_count)
-	misses.append(len(files) - hit_count)
-
-print('Precision@0.5IoU = {}'.format(precisions[0]))
-print('Mean Precision@[.5:.95]IoU = {}'.format(np.mean(precisions)))
-print(precisions)
-print(hits)
-print(misses)
+if __name__ == '__main__':
+	files = glob(GT_CSV_RGX)
+	
+	precisions = []
+	hits = []
+	misses = []
+	heap = []
+	for iou in np.linspace(0.5, 0.95, 10):
+		hit_count = 0.
+		for csv_path in files:
+			gt_bbox = get_bbox(csv_path)
+			pred_bbox_path = os.path.join(PRED_CSV, os.path.split(csv_path)[1])
+			pred_bbox = get_bbox(pred_bbox_path)
+			pred_iou = bboxes_iou(gt_bbox, pred_bbox)
+			if iou == 0.5:
+				heappush(heap, (pred_iou, csv_path))
+			if pred_iou < iou:
+				continue
+			hit_count += 1.
+		precisions.append(np.round(hit_count / len(files) * 100, 2))
+		hits.append(hit_count)
+		misses.append(len(files) - hit_count)
+	
+	print('')
+	print('Top 5 worst cases:')
+	for _ in range(5):
+		item = heappop(heap)
+		print('{} IoU: {}'.format(np.round(item[0], 2), item[1]))
+	
+	print('')
+	print('Precision@0.5IoU = {}'.format(precisions[0]))
+	print('Mean Precision@[.5:.95]IoU = {}'.format(np.mean(precisions)))
+	print(precisions)
+	print(hits)
+	print(misses)

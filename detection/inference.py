@@ -21,6 +21,7 @@ if tf.__version__ < '1.4.0':
 
 from object_detection.utils import label_map_util
 from object_detection.utils import visualization_utils as vis_util
+from evaluation import get_bbox
 
 PATH_TO_LABELS = './label_map.pbtxt'
 NUM_CLASSES = 1
@@ -212,23 +213,8 @@ for f in range(10):
 					detection_scores.append(output_dict['detection_scores'][det_index])
 					detection_classes.append(output_dict['detection_classes'][det_index])
 				
-				# Visualization of the results of a detection.
-				vis_util.visualize_boxes_and_labels_on_image_array(
-					image_np,
-					np.array(detection_boxes),
-					np.array(detection_classes),
-					np.array(detection_scores),
-					category_index,
-					instance_masks=output_dict.get('detection_masks'),
-					use_normalized_coordinates=True,
-					line_thickness=1,
-					min_score_thresh=0.0)
-				
-				img_result_path = os.path.join(PATH_TO_SAVE_IMG, os.path.split(image_path)[-1])
 				csv_result_path = os.path.join(PATH_TO_SAVE_CSV, os.path.split(image_path)[-1])
 				csv_result_path = csv_result_path.replace('PNG', 'csv')
-				
-				numpy2png(image_np[:, x_pad_size:-x_pad_size - 1, :], img_result_path)
 				
 				with open(csv_result_path, 'a') as f:
 					writer = csv.writer(f)
@@ -239,3 +225,41 @@ for f in range(10):
 						ymax = int(bbox[2] * image_np.shape[0])
 						xmax = int(bbox[3] * image_np.shape[1]) - x_pad_size
 						writer.writerow([(ymin + ymax) / 2, (xmin + xmax) / 2, detection_scores[i]])
+				
+				# Visualization of the results of a detection.
+				vis_util.visualize_boxes_and_labels_on_image_array(
+					image_np,
+					np.array(detection_boxes),
+					np.array(detection_classes),
+					np.array(detection_scores),
+					category_index,
+					use_normalized_coordinates=True,
+					line_thickness=2,
+					min_score_thresh=0.0)
+				
+				image_np = image_np[:, x_pad_size:-x_pad_size - 1, :]
+				box = get_bbox(csv_result_path)
+				
+				vis_util.visualize_boxes_and_labels_on_image_array(
+					image_np,
+					np.array([box]),
+					np.array([1]),
+					None,
+					category_index,
+					use_normalized_coordinates=False,
+					line_thickness=4,
+					groundtruth_box_visualization_color='blue')
+				
+				gt_box = get_bbox(image_path.replace('Nodules', 'Calipers').replace('PNG', 'csv'))
+				
+				vis_util.visualize_boxes_and_labels_on_image_array(
+					image_np,
+					np.array([gt_box]),
+					np.array([1]),
+					None,
+					category_index,
+					use_normalized_coordinates=False,
+					line_thickness=4)
+				
+				img_result_path = os.path.join(PATH_TO_SAVE_IMG, os.path.split(image_path)[-1])
+				numpy2png(image_np, img_result_path)
