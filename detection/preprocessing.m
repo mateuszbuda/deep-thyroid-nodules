@@ -23,7 +23,7 @@ end
 end
 
 function [ image ] = adjust_contrast( image, lims )
-%ADJUST_CONTRAST Contrast stretching in range `[0.01, 0.999]`
+%ADJUST_CONTRAST Contrast stretching in range `[0.01, 0.99]`
 
 if nargin < 2
     lims = [0.01, 0.99];
