@@ -2,7 +2,27 @@ from keras.initializers import Constant
 from keras.layers import Input, Conv2D, Flatten, Activation, MaxPool2D, Dropout
 from keras.models import Model
 
+from focal_loss import focal_loss
+
 img_width, img_height = 160, 160
+
+loss_dict = {
+    "out_cancer": focal_loss(),
+    "out_compos": focal_loss(),
+    "out_echo": focal_loss(),
+    "out_shape": focal_loss(),
+    "out_calcs": focal_loss(),
+    "out_margin": focal_loss(),
+}
+
+loss_weights_dict = {
+    "out_cancer": 1.0,
+    "out_compos": 1.0,
+    "out_echo": 1.0,
+    "out_shape": 1.0,
+    "out_calcs": 1.0,
+    "out_margin": 1.0,
+}
 
 
 def multitask_cnn():

@@ -9,7 +9,7 @@ from keras import backend as K
 from keras.models import load_model
 from sklearn.metrics import roc_auc_score, roc_curve
 
-from data import data, fold_pids
+from data import fold_data, fold_pids
 from focal_loss import focal_loss
 
 checkpoints_dir = (
@@ -26,7 +26,7 @@ def predict(fold, test_cases=True):
 
     net = load_model(weights_path, custom_objects={"focal_loss_fixed": focal_loss()})
 
-    x_train, y_train, x_test, y_test = data(fold)
+    x_train, y_train, x_test, y_test = fold_data(fold)
 
     if test_cases:
         preds = net.predict(x_test, batch_size=batch_size, verbose=1)
@@ -108,51 +108,8 @@ def plot_roc(y_true, y_pred, figname="roc_cv.png"):
     plt.close(fig)
 
 
-def test_train(folds):
-    all_train_pred = []
-    all_train_true = []
-
-    for f in range(folds):
-        predictions, targets = predict(f, test_cases=False)
-        pid_fold = [f] * len(targets)
-        pids = fold_pids(f, test=False)
-
-        cases_predictions = {}
-        cases_targets = {}
-        cases_folds = {}
-        for i in range(len(pids)):
-            pid = pids[i]
-            prev_pred = cases_predictions.get(pid, np.zeros(nb_categories))
-            preds = predictions[i]
-            cases_predictions[pid] = prev_pred + preds
-            cases_targets[pid] = targets[i]
-            cases_folds[pid] = pid_fold[i]
-
-        y_pred = []
-        y_true = []
-        y_id = []
-        y_fold = []
-        for pid in cases_predictions:
-            y_pred.append(cases_predictions[pid][0])
-            y_true.append(cases_targets[pid])
-            y_id.append(pid)
-            y_fold.append(cases_folds[pid])
-
-        all_train_pred.extend(y_pred)
-        all_train_true.extend([y[0] for y in y_true])
-
-        with open("../results/data/predictions_cv_train.csv", "a") as csvfile:
-            csvwriter = csv.writer(csvfile)
-            if f == 0:
-                csvwriter.writerow(["ID", "Prediction", "Cancer", "Fold"])
-            for pid, prediction, gt, fo in zip(y_id, y_pred, y_true, y_fold):
-                pid = pid.lstrip("0")
-                csvwriter.writerow([pid, prediction, gt[0], fo])
-
-    plot_roc(all_train_true, all_train_pred, figname="roc_train.png")
-
-
 if __name__ == "__main__":
+
     config = tf.ConfigProto()
     config.gpu_options.allow_growth = True
     config.allow_soft_placement = True
@@ -162,4 +119,3 @@ if __name__ == "__main__":
     device = "/gpu:" + sys.argv[1]
     with tf.device(device):
         test(int(sys.argv[2]))
-        test_train(int(sys.argv[2]))

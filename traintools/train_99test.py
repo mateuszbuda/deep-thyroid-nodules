@@ -1,23 +1,16 @@
 import os
 import sys
-from glob import glob
 
 import numpy as np
-import pandas as pd
 import tensorflow as tf
-from imgaug import augmenters
 from keras import backend as K
 from keras.callbacks import TensorBoard
 from keras.optimizers import RMSprop
-from scipy.misc import imread
 from sklearn.metrics import roc_auc_score
 
-from focal_loss import focal_loss
-from model import multitask_cnn
+from data import augment, train_data, test_data
+from model import multitask_cnn, loss_dict, loss_weights_dict
 
-data_path = "./data.csv"
-train_images_dir = "/media/maciej/Thyroid/thyroid-nodules/images-cv"
-test_images_dir = "/media/maciej/Thyroid/thyroid-nodules/images-test"
 checkpoints_dir = (
     "/media/maciej/Thyroid/thyroid-nodules/multitask/custom-test/checkpoints/"
 )
@@ -34,116 +27,8 @@ def train():
     if not os.path.exists(logs_dir):
         os.makedirs(logs_dir)
 
-    df = pd.read_csv(data_path)
-    df.fillna(0, inplace=True)
-    df.Calcs1.replace(0, "None", inplace=True)
-
-    df_cancer = df[["ID", "Cancer"]]
-    df_compos = pd.concat([df.ID, pd.get_dummies(df.Composition)], axis=1)
-    df_echo = pd.concat([df.ID, pd.get_dummies(df.Echogenicity)], axis=1)
-    df_shape = df[["ID", "Shape"]]
-    df_shape["Shape"] = df_shape.apply(lambda row: 1 if row.Shape == "y" else 0, axis=1)
-    df_calcs = pd.concat([df.ID, pd.get_dummies(df.Calcs1)], axis=1)
-    df_margin = pd.concat([df.ID, pd.get_dummies(df.MargA)], axis=1)
-
-    train_files = glob(train_images_dir + "/*.PNG")
-    test_files = glob(test_images_dir + "/*.PNG")
-
-    X_train = []
-    X_test = []
-
-    y_train_cancer = []
-    y_train_compos = []
-    y_train_echo = []
-    y_train_shape = []
-    y_train_calcs = []
-    y_train_margin = []
-    y_test_cancer = []
-    y_test_compos = []
-    y_test_echo = []
-    y_test_shape = []
-    y_test_calcs = []
-    y_test_margin = []
-
-    for f_path in test_files:
-        pid = fname2pid(f_path)
-        X_test.append(
-            np.expand_dims(
-                np.array(imread(f_path, flatten=False, mode="F")).astype(np.float32),
-                axis=-1,
-            )
-        )
-        y_test_cancer.append(
-            df_cancer[df_cancer.ID == pid].as_matrix().flatten()[1:].astype(np.float32)
-        )
-        y_test_compos.append(
-            df_compos[df_compos.ID == pid].as_matrix().flatten()[1:].astype(np.float32)
-        )
-        y_test_echo.append(
-            df_echo[df_echo.ID == pid].as_matrix().flatten()[1:].astype(np.float32)
-        )
-        if "trans" in f_path:
-            y_test_shape.append(
-                df_shape[df_shape.ID == pid]
-                .as_matrix()
-                .flatten()[1:]
-                .astype(np.float32)
-            )
-        else:
-            y_test_shape.append(np.array([0]).astype(np.float32))
-        y_test_calcs.append(
-            df_calcs[df_calcs.ID == pid].as_matrix().flatten()[1:].astype(np.float32)
-        )
-        y_test_margin.append(
-            df_margin[df_margin.ID == pid].as_matrix().flatten()[1:].astype(np.float32)
-        )
-
-    for f_path in train_files:
-        pid = fname2pid(f_path)
-        X_train.append(
-            np.expand_dims(
-                np.array(imread(f_path, flatten=False, mode="F")).astype(np.float32),
-                axis=-1,
-            )
-        )
-        y_train_cancer.append(
-            df_cancer[df_cancer.ID == pid].as_matrix().flatten()[1:].astype(np.float32)
-        )
-        y_train_compos.append(
-            df_compos[df_compos.ID == pid].as_matrix().flatten()[1:].astype(np.float32)
-        )
-        y_train_echo.append(
-            df_echo[df_echo.ID == pid].as_matrix().flatten()[1:].astype(np.float32)
-        )
-        if "trans" in f_path:
-            y_train_shape.append(
-                df_shape[df_shape.ID == pid]
-                .as_matrix()
-                .flatten()[1:]
-                .astype(np.float32)
-            )
-        else:
-            y_train_shape.append(np.array([0]).astype(np.float32))
-        y_train_calcs.append(
-            df_calcs[df_calcs.ID == pid].as_matrix().flatten()[1:].astype(np.float32)
-        )
-        y_train_margin.append(
-            df_margin[df_margin.ID == pid].as_matrix().flatten()[1:].astype(np.float32)
-        )
-
-    X_train = np.array(X_train)
-    X_test = np.array(X_test)
-
-    print(X_train.shape)
-    print(X_test.shape)
-
-    X_train /= 255.
-    X_train -= 0.5
-    X_train *= 2.
-
-    X_test /= 255.
-    X_test -= 0.5
-    X_test *= 2.
+    X_train, y_train = train_data()
+    X_test, y_test = test_data()
 
     print("Training and validation data processed.")
 
@@ -152,22 +37,8 @@ def train():
     optimizer = RMSprop(lr=base_lr)
     model.compile(
         optimizer=optimizer,
-        loss={
-            "out_cancer": focal_loss(),
-            "out_compos": focal_loss(),
-            "out_echo": focal_loss(),
-            "out_shape": focal_loss(),
-            "out_calcs": focal_loss(),
-            "out_margin": focal_loss(),
-        },
-        loss_weights={
-            "out_cancer": 1.0,
-            "out_compos": 1.0,
-            "out_echo": 1.0,
-            "out_shape": 1.0,
-            "out_calcs": 1.0,
-            "out_margin": 1.0,
-        },
+        loss=loss_dict,
+        loss_weights=loss_weights_dict,
         metrics=["accuracy"],
     )
 
@@ -179,25 +50,8 @@ def train():
         X_train_augmented = augment(X_train)
         model.fit(
             {"thyroid_input": X_train_augmented},
-            {
-                "out_cancer": np.array(y_train_cancer),
-                "out_compos": np.array(y_train_compos),
-                "out_echo": np.array(y_train_echo),
-                "out_shape": np.array(y_train_shape),
-                "out_calcs": np.array(y_train_calcs),
-                "out_margin": np.array(y_train_margin),
-            },
-            validation_data=(
-                X_test,
-                [
-                    np.array(y_test_cancer),
-                    np.array(y_test_compos),
-                    np.array(y_test_echo),
-                    np.array(y_test_shape),
-                    np.array(y_test_calcs),
-                    np.array(y_test_margin),
-                ],
-            ),
+            y_train,
+            validation_data=(X_test, y_test),
             batch_size=batch_size,
             epochs=e + 1,
             initial_epoch=e,
@@ -205,35 +59,17 @@ def train():
             callbacks=callbacks,
         )
 
-        if np.mod(e + 1, 20) == 0:
+        if np.mod(e + 1, 10) == 0:
             y_pred = model.predict(X_train, batch_size=batch_size, verbose=1)
-            auc_train = roc_auc_score(np.array(y_train_cancer), y_pred[0])
+            auc_train = roc_auc_score(y_train["out_cancer"], y_pred[0])
             y_pred = model.predict(X_test, batch_size=batch_size, verbose=1)
-            auc_test = roc_auc_score(np.array(y_test_cancer), y_pred[0])
+            auc_test = roc_auc_score(y_test[0], y_pred[0])
             with open(os.path.join(logs_dir, "auc.txt"), "a") as auc_file:
                 auc_file.write("{},{}\n".format(auc_train, auc_test))
 
-    model.save(os.path.join(checkpoints_dir, "weights_{}.h5".format(epochs)))
+    model.save(os.path.join(checkpoints_dir, "weights.h5"))
 
     print("Training completed.")
-
-
-def augment(X):
-    seq = augmenters.Sequential(
-        [
-            augmenters.Fliplr(0.5),
-            augmenters.Flipud(0.5),
-            augmenters.Affine(rotate=(-15, 15)),
-            augmenters.Affine(shear=(-15, 15)),
-            augmenters.Affine(translate_percent={"x": (-0.2, 0.2), "y": (-0.2, 0.2)}),
-            augmenters.Affine(scale=(0.9, 1.1)),
-        ]
-    )
-    return seq.augment_images(X)
-
-
-def fname2pid(fname):
-    return fname.split("/")[-1].split(".")[0].lstrip("0")
 
 
 if __name__ == "__main__":

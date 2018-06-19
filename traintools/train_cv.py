@@ -8,9 +8,8 @@ from keras.callbacks import TensorBoard
 from keras.optimizers import RMSprop
 from sklearn.metrics import roc_auc_score
 
-from data import data, augment
-from focal_loss import focal_loss
-from model import multitask_cnn
+from data import fold_data, augment
+from model import multitask_cnn, loss_dict, loss_weights_dict
 
 checkpoints_dir = (
     "/media/maciej/Thyroid/thyroid-nodules/multitask/custom/checkpoints/<FOLD>/"
@@ -31,7 +30,7 @@ def train(fold):
     if not os.path.exists(fold_logs_dir):
         os.makedirs(fold_logs_dir)
 
-    x_train, y_train, x_test, y_test = data(fold)
+    x_train, y_train, x_test, y_test = fold_data(fold)
 
     print("Training and validation data processed.")
     print("Training data shape: {}".format(len(x_train)))
@@ -41,23 +40,6 @@ def train(fold):
 
     optimizer = RMSprop(lr=base_lr)
 
-    loss_dict = {
-        "out_cancer": focal_loss(),
-        "out_compos": focal_loss(),
-        "out_echo": focal_loss(),
-        "out_shape": focal_loss(),
-        "out_calcs": focal_loss(),
-        "out_margin": focal_loss(),
-    }
-
-    loss_weights_dict = {
-        "out_cancer": 1.0,
-        "out_compos": 1.0,
-        "out_echo": 1.0,
-        "out_shape": 1.0,
-        "out_calcs": 1.0,
-        "out_margin": 1.0,
-    }
     model.compile(
         optimizer=optimizer,
         loss=loss_dict,
