@@ -11,9 +11,6 @@ images_dir = "/media/maciej/Thyroid/thyroid-nodules/images-cv"
 
 random_seed = 3
 total_folds = 10
-batch_size = 128
-epochs = 250
-base_lr = 0.001
 
 
 def fold_pids(fold, test=True):
