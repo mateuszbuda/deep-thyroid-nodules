@@ -3,12 +3,16 @@ from random import seed, randint
 
 import numpy as np
 import pandas as pd
+import tensorflow as tf
+import tensorlayer as tl
 from imgaug import augmenters
 from scipy.misc import imread
 
 data_path = "./data.csv"
-images_dir = "/media/maciej/Thyroid/thyroid-nodules/images-cv"
-test_images_dir = "/media/maciej/Thyroid/thyroid-nodules/images-test"
+images_dir = "/home/adithya/Desktop/Adithya_Thyroid_Deep_Learning/data/Nodules-originals"
+mask_dir = "/home/adithya/Desktop/Adithya_Thyroid_Deep_Learning/data/Nodule-masks"
+
+#DONT NEED THIS: test_images_dir = "/media/maciej/Thyroid/thyroid-nodules/images-test"
 
 random_seed = 3
 total_folds = 10
@@ -212,6 +216,7 @@ def fold_data(fold):
     df_margin = pd.concat([df.ID, pd.get_dummies(df.MargA)], axis=1)
 
     all_files = glob(images_dir + "/*.PNG")
+    all_masks = glob(mask_dir + "/*.PNG")
     val_ids = validation_ids(fold, df_cancer)
 
     X_train = []
@@ -230,12 +235,22 @@ def fold_data(fold):
     y_test_calcs = []
     y_test_margin = []
 
-    for f_path in all_files:
+    for f_path, m_path in zip(all_files, all_masks):
         pid = fname2pid(f_path)
         image = np.expand_dims(
             np.array(imread(f_path, flatten=False, mode="F")).astype(np.float32),
             axis=-1,
         )
+       # print("og im shape: ", image.shape)
+        mask = np.expand_dims(
+            np.array(imread(m_path, flatten=False, mode="F")).astype(np.float32),
+            axis=-1,
+        )
+	
+	#print("mask shape: ", mask.shape)
+
+        image = np.append(image, mask, axis=2)
+	#print("new im shape: ", image.shape)
         if pid in val_ids:
             X_test.append(image)
             y_test_cancer.append(
@@ -356,7 +371,99 @@ def augment(X):
             augmenters.Affine(scale=(0.9, 1.1)),
         ]
     )
+
     return seq.augment_images(X)
+
+
+#TODO: will have to get rid of the last few lines in train which normalize the entire training set at once, since we will be doing that here (JK --> im not sure if we r doin it here or not, it will depend ...)
+def augment_2(img, mask):
+   
+    #print("img og shape:", img.shape)
+    img = np.expand_dims(img, axis=2)
+    #print("img new shape:", img.shape) 
+    
+    #Start off with an elastic transformation on the nodule image
+    img = tl.prepro.elastic_transform(img, alpha=img.shape[1]*3, sigma=img.shape[1]*0.07)
+	
+    img = tf.image.grayscale_to_rgb(img)
+    img = tf.image.rgb_to_hsv(img)
+    
+    og_img_shape = img.shape
+    og_mask_shape = mask.shape
+
+    print("mask shape!", mask.shape)
+
+    #Randomly flip the image
+    r_flip = tf.random_uniform([3], 0, 1.0, dtype=tf.float32)
+
+    #Left right
+    mirror = tf.less(r_flip[0], 0.5)
+    with tf.Session() as default:
+	mirror = mirror.eval()
+    
+    if(mirror):
+	img = tf.reverse(img, tf.stack([1]))
+	mask = tf.reverse(mask, tf.stack([1]))    
+    
+    #Up down
+    mirror = tf.less(r_flip[1], 0.5)
+    with tf.Session() as default:
+	mirror = mirror.eval()
+
+    if(mirror):
+	img = tf.reverse(img, tf.stack([0]))
+    	mask = tf.reverse(mask, tf.stack([0]))    
+
+    #Transpose
+    mirror = tf.less(tf.stack([r_flip[2], 1.0 - r_flip[2]]), 0.5)
+    mirror = tf.cast(mirror, tf.int32)
+    mirror = tf.stack([mirror[0], mirror[1], 2])
+    mirror_mask = tf.stack([mirror[0], mirror[1]])
+
+    img = tf.transpose(img, perm=mirror) 
+    mask = tf.transpose(mask, perm=mirror_mask)
+
+    #Adjust the image so that it's back to its original shape after the transpose operation
+    img.set_shape(og_img_shape)
+   
+    print("og_mask_shape: ", og_mask_shape)
+    mask.set_shape(og_mask_shape)
+
+   #Contrast and saturation
+    img = tf.image.random_contrast(img, lower=0.2, upper=1.8)
+    img = tf.image.random_saturation(img, lower=0.5, upper=1.5)
+
+    #Return image to original dimensions as a grayscale
+    img = tf.image.hsv_to_rgb(img)
+    img = tf.image.rgb_to_grayscale(img)
+
+    with tf.Session() as default:
+        img = img.eval()
+        mask = mask.eval()
+  
+    img = img.astype(np.int8)
+    mask = mask.astype(np.int8)
+
+    return np.squeeze(img), np.squeeze(mask)
+
+#assume X is a numpy tensor of dimensions n x 160 x 160 x 2
+def augment_4(X):
+    print("X.shape:", X.shape)
+    n_imgs = X.shape[0]
+
+    X_augmented = np.copy(X)
+    
+    for i in range(n_imgs):
+	current_im = X[i,:,:,0]
+	current_mask = X[i,:,:,1]
+
+    current_im, current_mask = augment_2(current_im, current_mask)
+ 
+    X_augmented[i,:,:,0] = current_im
+    X_augmented[i,:,:,1] = current_mask
+    
+    return X_augmented
+
 
 
 def validation_ids(fold, df_cancer):

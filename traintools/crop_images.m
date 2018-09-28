@@ -2,24 +2,28 @@ function [ ] = crop_images( images_regex, cals_path, target_dim )
 %CROP_IMAGES Crops nodules to square bounding box defined by callipers and
 %resize it to given dimensions.
 
+
+
 if nargin < 1
-    images_regex = '/media/maciej/Thyroid/thyroid-nodules/images-cv/*.PNG';
+    images_regex = '/home/adithya/Desktop/Adithya_Thyroid_Deep_Learning/data/Nodule-masks/*.PNG';
 end
 if nargin < 2
-    cals_path = '/media/maciej/Thyroid/thyroid-nodules/detection/Calipers-cv';
+    cals_path = '/home/adithya/Desktop/Adithya_Thyroid_Deep_Learning/data/Calipers-detect';
 end
 if nargin < 3
     target_dim = 160;
 end
 
-addpath('../data-cleaning');
+addpath('/home/adithya/Desktop/Adithya_Thyroid_Deep_Learning/deep-thyroid-nodules/data-cleaning');
 
 margin = 32;
 
-images_dir = dir(images_regex);
+images_dir = dir(images_regex)
+%cals_path
+
+a = numel(images_dir)
 
 for i = 1:numel(images_dir)
-    
     img_path = fullfile(images_dir(i).folder, images_dir(i).name);
     cal_filename = strrep(images_dir(i).name, 'PNG', 'csv');
     cal_path = fullfile(cals_path, cal_filename);
@@ -44,7 +48,7 @@ for i = 1:numel(images_dir)
     image = uint8(image * 255);
     
     imwrite(image, img_path);
-    
+    a = "next image done"    
 end
 
 end

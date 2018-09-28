@@ -8,13 +8,13 @@ from keras.callbacks import TensorBoard
 from keras.optimizers import RMSprop
 from sklearn.metrics import roc_auc_score
 
-from data import fold_data, augment
+from data import fold_data, augment, augment_2, augment_4
 from model import multitask_cnn, loss_dict, loss_weights_dict
 
 checkpoints_dir = (
-    "/media/maciej/Thyroid/thyroid-nodules/multitask/custom/checkpoints/<FOLD>/"
+    "/home/adithya/Desktop/Adithya_Thyroid_Deep_Learning/deep-thyroid-nodules-2/checkpoints/<FOLD>/"
 )
-logs_dir = "/media/maciej/Thyroid/thyroid-nodules/multitask/custom/logs/<FOLD>/"
+logs_dir = "/home/adithya/Desktop/Adithya_Thyroid_Deep_Learning/deep-thyroid-nodules-2/logs/<FOLD>/"
 
 batch_size = 128
 epochs = 250
@@ -57,7 +57,8 @@ def train(fold):
     y_test_cancer = y_test[0]
 
     for e in range(epochs):
-        x_train_augmented = augment(x_train)
+        x_train_augmented = augment_4(x_train)
+        #print("X_TRAIN_AUGMENTED TYPE: ", np.dtype(x_train_augmented))
         model.fit(
             x={"thyroid_input": x_train_augmented},
             y=y_train,
@@ -89,7 +90,13 @@ if __name__ == "__main__":
     config.allow_soft_placement = True
     sess = tf.Session(config=config)
     K.set_session(sess)
-
-    device = "/gpu:" + sys.argv[1]
-    with tf.device(device):
-        train(int(sys.argv[2]))
+    
+    train_fold = 0
+    device = "/gpu:0"# + sys.argv[1]
+    
+    while(train_fold <=9):
+	print("current train fold: ", train_fold)
+	with tf.device(device):
+            train(train_fold)
+        train_fold = train_fold + 1
+       

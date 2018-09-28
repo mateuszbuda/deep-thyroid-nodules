@@ -26,8 +26,8 @@ loss_weights_dict = {
 
 
 def multitask_cnn():
-    # 160x160x1
-    input_tensor = Input(shape=(img_height, img_width, 1), name="thyroid_input")
+    # modified by Adithya from 160x160x1 to 160x160x2 due to addition of nodule mask
+    input_tensor = Input(shape=(img_height, img_width, 2), name="thyroid_input")
     # 160x160x8
     x = Conv2D(8, (3, 3), padding="same", activation="relu")(input_tensor)
     # 80x80x8

@@ -13,9 +13,10 @@ from data import fold_data, fold_pids
 from focal_loss import focal_loss
 
 checkpoints_dir = (
-    "/media/maciej/Thyroid/thyroid-nodules/multitask/custom/checkpoints/<FOLD>/"
+    "/home/adithya/Desktop/Adithya_Thyroid_Deep_Learning/deep-thyroid-nodules-2/checkpoints/<FOLD>/"
 )
-weights_file = "weights_250.h5"
+
+weights_file = "weights.h5"
 batch_size = 128
 nb_categories = 1
 
@@ -89,7 +90,9 @@ def test(folds):
 def plot_roc(y_true, y_pred, figname="roc_cv.png"):
     fpr, tpr, thresholds = roc_curve(y_true, y_pred)
     roc_auc = roc_auc_score(y_true, y_pred)
-
+    
+    #print("y_true_shape: ", y_true.shape)
+   # print("y_pred_shape: ", y_pred.shape)
     print("roc auc = {}".format(roc_auc))
 
     plt.rcParams.update({"font.size": 24})
@@ -116,6 +119,7 @@ if __name__ == "__main__":
     sess = tf.Session(config=config)
     K.set_session(sess)
 
-    device = "/gpu:" + sys.argv[1]
+    device = "/gpu:0"# + sys.argv[1]
+  
     with tf.device(device):
-        test(int(sys.argv[2]))
+	  test(10)
