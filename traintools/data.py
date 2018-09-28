@@ -12,7 +12,6 @@ data_path = "./data.csv"
 images_dir = "/home/adithya/Desktop/Adithya_Thyroid_Deep_Learning/data/Nodules-originals"
 mask_dir = "/home/adithya/Desktop/Adithya_Thyroid_Deep_Learning/data/Nodule-masks"
 
-#DONT NEED THIS: test_images_dir = "/media/maciej/Thyroid/thyroid-nodules/images-test"
 
 random_seed = 3
 total_folds = 10
@@ -375,12 +374,9 @@ def augment(X):
     return seq.augment_images(X)
 
 
-#TODO: will have to get rid of the last few lines in train which normalize the entire training set at once, since we will be doing that here (JK --> im not sure if we r doin it here or not, it will depend ...)
 def augment_2(img, mask):
-   
-    #print("img og shape:", img.shape)
+  
     img = np.expand_dims(img, axis=2)
-    #print("img new shape:", img.shape) 
     
     #Start off with an elastic transformation on the nodule image
     img = tl.prepro.elastic_transform(img, alpha=img.shape[1]*3, sigma=img.shape[1]*0.07)
@@ -391,7 +387,6 @@ def augment_2(img, mask):
     og_img_shape = img.shape
     og_mask_shape = mask.shape
 
-    print("mask shape!", mask.shape)
 
     #Randomly flip the image
     r_flip = tf.random_uniform([3], 0, 1.0, dtype=tf.float32)
@@ -425,8 +420,6 @@ def augment_2(img, mask):
 
     #Adjust the image so that it's back to its original shape after the transpose operation
     img.set_shape(og_img_shape)
-   
-    print("og_mask_shape: ", og_mask_shape)
     mask.set_shape(og_mask_shape)
 
    #Contrast and saturation
@@ -448,7 +441,6 @@ def augment_2(img, mask):
 
 #assume X is a numpy tensor of dimensions n x 160 x 160 x 2
 def augment_4(X):
-    print("X.shape:", X.shape)
     n_imgs = X.shape[0]
 
     X_augmented = np.copy(X)
@@ -463,8 +455,6 @@ def augment_4(X):
     X_augmented[i,:,:,1] = current_mask
     
     return X_augmented
-
-
 
 def validation_ids(fold, df_cancer):
     pid_set = set()
