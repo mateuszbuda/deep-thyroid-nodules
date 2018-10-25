@@ -1,0 +1,22 @@
+RADIOLOGIST PREDICTIONS (data_readers_0 - 7):
+
+  (groundtruth)              cystic/spongiform   mixed_cystic  solid (prediction)  
+  cystic/spongiform          0.4659          	 0.3409        0.1932       
+  mixed_cystic               0.1809          	 0.5099        0.3092
+  solid                      0.01                0.04          0.95   
+
+
+
+
+
+MODEL PREDICTIONS:
+
+  (groundtruth)              spongiform   mixed_cystic  solid (prediction)  
+  spongiform          	     0.53448276 	 0.3362069     0.12931034      
+  mixed_cystic               0.12317328 	 0.6263048     0.25052192
+  solid                      0.02971768 	 0.12630015    0.84398217 
+
+
+threw out 'cystic', 'cannot tell' classes in this model
+
+
