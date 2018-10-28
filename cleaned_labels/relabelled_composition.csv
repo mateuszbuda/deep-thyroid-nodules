@@ -1,0 +1,2221 @@
+,Composition,ID
+0,Spongiform,0403_1left
+1,Spongiform,0403_1right
+2,Spongiform,0022long
+3,Spongiform,0022trans
+4,Mixed cystic_solid,1043long
+5,Spongiform,1043trans
+6,Spongiform,0919long
+7,Spongiform,0919trans
+8,Mixed cystic_solid,0369_2long
+9,Mixed cystic_solid,0369_2trans
+10,Spongiform,0581long
+11,Spongiform,0581trans
+12,Mixed cystic_solid,1042long
+13,Mixed cystic_solid,1042trans
+14,Spongiform,0742long
+15,Mixed cystic_solid,0742trans
+16,Spongiform,0378long
+17,Spongiform,0378trans
+18,Spongiform,0088long
+19,Entirely or almost entirely solid,0088trans
+20,Spongiform,0139_1long
+21,Entirely or almost entirely solid,0139_1trans
+22,Spongiform,0312left
+23,Spongiform,0312right
+24,Spongiform,0794_1long
+25,Spongiform,0794_1trans
+26,Entirely or almost entirely solid,0150long
+27,Spongiform,0150trans
+28,Mixed cystic_solid,1454long
+29,Spongiform,1454trans
+30,Mixed cystic_solid,0334long
+31,Mixed cystic_solid,0334trans
+32,Spongiform,0339long
+33,Spongiform,0339trans
+34,Spongiform,0071long
+35,Spongiform,0071trans
+36,Spongiform,0008long
+37,Spongiform,0008trans
+38,Mixed cystic_solid,0065_1long
+39,Mixed cystic_solid,0065_1trans
+40,Mixed cystic_solid,0147long
+41,Mixed cystic_solid,0147trans
+42,Spongiform,0403_2long
+43,Spongiform,0403_2trans
+44,Mixed cystic_solid,1130long
+45,Spongiform,1130trans
+46,Spongiform,0081long
+47,Spongiform,0081trans
+48,Entirely or almost entirely solid,0089_1long
+49,Spongiform,0089_1trans
+50,Spongiform,0142long
+51,Spongiform,0142trans
+52,Spongiform,0003long
+53,Spongiform,0003trans
+54,Spongiform,1109long
+55,Entirely or almost entirely solid,1109trans
+56,Spongiform,0141_2long
+57,Spongiform,0141_2trans
+58,Spongiform,0900long
+59,Entirely or almost entirely solid,0900trans
+60,Mixed cystic_solid,0473_2long
+61,Mixed cystic_solid,0473_2trans
+62,Spongiform,0735long
+63,Spongiform,0735trans
+64,Spongiform,0409long
+65,Spongiform,0409trans
+66,Spongiform,1429long
+67,Mixed cystic_solid,1429trans
+68,Spongiform,0092long
+69,Spongiform,0092trans
+70,Spongiform,1230_2long
+71,Spongiform,1230_2trans
+72,Entirely or almost entirely solid,0277_1long
+73,Entirely or almost entirely solid,0277_1trans
+74,Spongiform,1055long
+75,Entirely or almost entirely solid,1055trans
+76,Spongiform,1166long
+77,Spongiform,1166trans
+78,Spongiform,0163long
+79,Spongiform,0163trans
+80,Mixed cystic_solid,0197long
+81,Mixed cystic_solid,0197trans
+82,Mixed cystic_solid,0586_2long
+83,Spongiform,0586_2trans
+84,Spongiform,0124long
+85,Spongiform,0124trans
+86,Spongiform,0063long
+87,Spongiform,0063trans
+88,Spongiform,0126long
+89,Spongiform,0126trans
+90,Mixed cystic_solid,0110_1long
+91,Mixed cystic_solid,0110_1trans
+92,Mixed cystic_solid,0944long
+93,Mixed cystic_solid,0944trans
+94,Spongiform,0006long
+95,Mixed cystic_solid,0006trans
+96,Spongiform,0843long
+97,Spongiform,0843trans
+98,Spongiform,0134long
+99,Spongiform,0134trans
+100,Spongiform,0371long
+101,Spongiform,0371trans
+102,Mixed cystic_solid,0950long
+103,Spongiform,0950trans
+104,Mixed cystic_solid,0417long
+105,Mixed cystic_solid,0417trans
+106,Spongiform,0340long
+107,Spongiform,0340trans
+108,Mixed cystic_solid,0986long
+109,Mixed cystic_solid,0986trans
+110,Mixed cystic_solid,0184left
+111,Spongiform,0184right
+112,Spongiform,0342long
+113,Spongiform,0342trans
+114,Spongiform,1102long
+115,Spongiform,1102trans
+116,Mixed cystic_solid,1213long
+117,Mixed cystic_solid,1213trans
+118,Spongiform,1134long
+119,Spongiform,1134trans
+120,Mixed cystic_solid,0049long
+121,Spongiform,0049trans
+122,Spongiform,0243long
+123,Spongiform,0243trans
+124,Spongiform,0162long
+125,Spongiform,0162trans
+126,Spongiform,0160long
+127,Spongiform,0160trans
+128,Spongiform,1210long
+129,Spongiform,1210trans
+130,Spongiform,0283long
+131,Spongiform,0283trans
+132,Spongiform,0579long
+133,Spongiform,0579trans
+134,Spongiform,0418_1long
+135,Spongiform,0418_1trans
+136,Mixed cystic_solid,0584_2long
+137,Spongiform,0584_2trans
+138,Entirely or almost entirely solid,1094long
+139,Entirely or almost entirely solid,1094trans
+140,Spongiform,0825long
+141,Spongiform,0825trans
+142,Spongiform,0396long
+143,Spongiform,0396trans
+144,Mixed cystic_solid,0308long
+145,Spongiform,0308trans
+146,Spongiform,0017_1long
+147,Spongiform,0017_1trans
+148,Mixed cystic_solid,0474long
+149,Mixed cystic_solid,0474trans
+150,Spongiform,1095long
+151,Spongiform,1095trans
+152,Spongiform,0016long
+153,Spongiform,0016trans
+154,Mixed cystic_solid,0936_1long
+155,Entirely or almost entirely solid,0936_1trans
+156,Mixed cystic_solid,0413long
+157,Entirely or almost entirely solid,0413trans
+158,Mixed cystic_solid,1027long
+159,Mixed cystic_solid,1027trans
+160,Mixed cystic_solid,0868long
+161,Mixed cystic_solid,0868trans
+162,Mixed cystic_solid,0423long
+163,Mixed cystic_solid,0423trans
+164,Mixed cystic_solid,1131long
+165,Mixed cystic_solid,1131trans
+166,Entirely or almost entirely solid,0995long
+167,Mixed cystic_solid,0995trans
+168,Mixed cystic_solid,0045_1long
+169,Mixed cystic_solid,0045_1trans
+170,Mixed cystic_solid,1092long
+171,Mixed cystic_solid,1092trans
+172,Mixed cystic_solid,1256long
+173,Mixed cystic_solid,1256trans
+174,Mixed cystic_solid,0550long
+175,Mixed cystic_solid,0550trans
+176,Mixed cystic_solid,1275long
+177,Mixed cystic_solid,1275trans
+178,Entirely or almost entirely solid,0397long
+179,Mixed cystic_solid,0397trans
+180,Mixed cystic_solid,0230long
+181,Mixed cystic_solid,0230trans
+182,Mixed cystic_solid,1153long
+183,Mixed cystic_solid,1153trans
+184,Mixed cystic_solid,0946long
+185,Mixed cystic_solid,0946trans
+186,Mixed cystic_solid,0357long
+187,Entirely or almost entirely solid,0357trans
+188,Mixed cystic_solid,0772long
+189,Mixed cystic_solid,0772trans
+190,Mixed cystic_solid,1091long
+191,Mixed cystic_solid,1091trans
+192,Entirely or almost entirely solid,0212long
+193,Entirely or almost entirely solid,0212trans
+194,Mixed cystic_solid,0170long
+195,Mixed cystic_solid,0170trans
+196,Mixed cystic_solid,0783long
+197,Mixed cystic_solid,0783trans
+198,Mixed cystic_solid,0752long
+199,Mixed cystic_solid,0752trans
+200,Entirely or almost entirely solid,1222long
+201,Entirely or almost entirely solid,1222trans
+202,Entirely or almost entirely solid,0597long
+203,Entirely or almost entirely solid,0597trans
+204,Cystic,0534long
+205,Cystic,0534trans
+206,Mixed cystic_solid,1434long
+207,Cystic,1434trans
+208,Mixed cystic_solid,0595long
+209,Mixed cystic_solid,0595trans
+210,Mixed cystic_solid,0833_2long
+211,Mixed cystic_solid,0833_2trans
+212,Entirely or almost entirely solid,0263long
+213,Mixed cystic_solid,0263trans
+214,Mixed cystic_solid,0907long
+215,Mixed cystic_solid,0907trans
+216,Mixed cystic_solid,1250long
+217,Mixed cystic_solid,1250trans
+218,Mixed cystic_solid,1410long
+219,Mixed cystic_solid,1410trans
+220,Cystic,0733long
+221,Cystic,0733trans
+222,Mixed cystic_solid,0198long
+223,Mixed cystic_solid,0198trans
+224,Mixed cystic_solid,1161long
+225,Mixed cystic_solid,1161trans
+226,Mixed cystic_solid,1338long
+227,Mixed cystic_solid,1338trans
+228,Mixed cystic_solid,0869long
+229,Mixed cystic_solid,0869trans
+230,Mixed cystic_solid,0362_2long
+231,Mixed cystic_solid,0362_2trans
+232,Mixed cystic_solid,0828long
+233,Mixed cystic_solid,0828trans
+234,Mixed cystic_solid,1215long
+235,Mixed cystic_solid,1215trans
+236,Mixed cystic_solid,0461long
+237,Mixed cystic_solid,0461trans
+238,Mixed cystic_solid,0905_1long
+239,Entirely or almost entirely solid,0905_1trans
+240,Mixed cystic_solid,0361long
+241,Entirely or almost entirely solid,0361trans
+242,Mixed cystic_solid,0606_1long
+243,Mixed cystic_solid,0606_1trans
+244,Mixed cystic_solid,0779long
+245,Cystic,0779trans
+246,Mixed cystic_solid,0862long
+247,Entirely or almost entirely solid,0862trans
+248,Entirely or almost entirely solid,0151long
+249,Entirely or almost entirely solid,0151trans
+250,Mixed cystic_solid,0700_1long
+251,Mixed cystic_solid,0700_1trans
+252,Mixed cystic_solid,0731long
+253,Entirely or almost entirely solid,0731trans
+254,Mixed cystic_solid,0884long
+255,Mixed cystic_solid,0884trans
+256,Mixed cystic_solid,0814long
+257,Entirely or almost entirely solid,0814trans
+258,Mixed cystic_solid,0875_1long
+259,Mixed cystic_solid,0875_1trans
+260,Entirely or almost entirely solid,1167long
+261,Mixed cystic_solid,1167trans
+262,Mixed cystic_solid,1436_2long
+263,Mixed cystic_solid,1436_2trans
+264,Entirely or almost entirely solid,0514long
+265,Entirely or almost entirely solid,0514trans
+266,Mixed cystic_solid,0683long
+267,Mixed cystic_solid,0683trans
+268,Mixed cystic_solid,1028_1long
+269,Entirely or almost entirely solid,1028_1trans
+270,Entirely or almost entirely solid,0666long
+271,Mixed cystic_solid,0666trans
+272,Mixed cystic_solid,1305long
+273,Mixed cystic_solid,1305trans
+274,Mixed cystic_solid,0732long
+275,Mixed cystic_solid,0732trans
+276,Mixed cystic_solid,1164long
+277,Mixed cystic_solid,1164trans
+278,Mixed cystic_solid,1069long
+279,Mixed cystic_solid,1069trans
+280,Mixed cystic_solid,0123_1long
+281,Mixed cystic_solid,0123_1trans
+282,Entirely or almost entirely solid,0321long
+283,Entirely or almost entirely solid,0321trans
+284,Mixed cystic_solid,0040long
+285,Mixed cystic_solid,0040trans
+286,Mixed cystic_solid,1249long
+287,Mixed cystic_solid,1249trans
+288,Mixed cystic_solid,0574_2long
+289,Mixed cystic_solid,0574_2trans
+290,Mixed cystic_solid,1122long
+291,Mixed cystic_solid,1122trans
+292,Mixed cystic_solid,1026long
+293,Entirely or almost entirely solid,1026trans
+294,Entirely or almost entirely solid,1408_1long
+295,Entirely or almost entirely solid,1408_1trans
+296,Entirely or almost entirely solid,0248long
+297,Entirely or almost entirely solid,0248trans
+298,Mixed cystic_solid,0804long
+299,Mixed cystic_solid,0804trans
+300,Mixed cystic_solid,0489long
+301,Mixed cystic_solid,0489trans
+302,Mixed cystic_solid,1171long
+303,Mixed cystic_solid,1171trans
+304,Mixed cystic_solid,1427long
+305,Mixed cystic_solid,1427trans
+306,Cystic,0734long
+307,Cystic,0734trans
+308,Mixed cystic_solid,0684long
+309,Mixed cystic_solid,0684trans
+310,Mixed cystic_solid,0169_2long
+311,Entirely or almost entirely solid,0169_2trans
+312,Mixed cystic_solid,1284long
+313,Mixed cystic_solid,1284trans
+314,Mixed cystic_solid,0945left
+315,Entirely or almost entirely solid,0945right
+316,Mixed cystic_solid,0981_1long
+317,Mixed cystic_solid,0981_1trans
+318,Mixed cystic_solid,1149long
+319,Mixed cystic_solid,1149trans
+320,Mixed cystic_solid,1224long
+321,Entirely or almost entirely solid,1224trans
+322,Mixed cystic_solid,0218_2long
+323,Mixed cystic_solid,0218_2trans
+324,Mixed cystic_solid,0010_1long
+325,Cystic,0010_1trans
+326,Mixed cystic_solid,0471long
+327,Entirely or almost entirely solid,0471trans
+328,Mixed cystic_solid,1180long
+329,Entirely or almost entirely solid,1180trans
+330,Entirely or almost entirely solid,0154long
+331,Mixed cystic_solid,0154trans
+332,Mixed cystic_solid,0419left
+333,Mixed cystic_solid,0419right
+334,Mixed cystic_solid,0706long
+335,Cystic,0706trans
+336,Mixed cystic_solid,0482_2long
+337,Mixed cystic_solid,0482_2trans
+338,Mixed cystic_solid,0195long
+339,Mixed cystic_solid,0195trans
+340,Entirely or almost entirely solid,0649long
+341,Entirely or almost entirely solid,0649trans
+342,Entirely or almost entirely solid,0152_1long
+343,Mixed cystic_solid,0152_1trans
+344,Mixed cystic_solid,0806long
+345,Entirely or almost entirely solid,0806trans
+346,Mixed cystic_solid,0208long
+347,Cystic,0208trans
+348,Mixed cystic_solid,1255_1long
+349,Mixed cystic_solid,1255_1trans
+350,Mixed cystic_solid,0132long
+351,Mixed cystic_solid,0132trans
+352,Mixed cystic_solid,0214long
+353,Mixed cystic_solid,0214trans
+354,Mixed cystic_solid,1306long
+355,Mixed cystic_solid,1306trans
+356,Mixed cystic_solid,0400long
+357,Mixed cystic_solid,0400trans
+358,Mixed cystic_solid,0685_2long
+359,Mixed cystic_solid,0685_2trans
+360,Entirely or almost entirely solid,1244long
+361,Entirely or almost entirely solid,1244trans
+362,Mixed cystic_solid,0459long
+363,Mixed cystic_solid,0459trans
+364,Mixed cystic_solid,1261long
+365,Mixed cystic_solid,1261trans
+366,Mixed cystic_solid,0673_1long
+367,Mixed cystic_solid,0673_1trans
+368,Mixed cystic_solid,1273long
+369,Mixed cystic_solid,1273trans
+370,Mixed cystic_solid,0690long
+371,Mixed cystic_solid,0690trans
+372,Mixed cystic_solid,0553long
+373,Mixed cystic_solid,0553trans
+374,Mixed cystic_solid,0566long
+375,Mixed cystic_solid,0566trans
+376,Entirely or almost entirely solid,0099long
+377,Entirely or almost entirely solid,0099trans
+378,Mixed cystic_solid,0929long
+379,Mixed cystic_solid,0929trans
+380,Mixed cystic_solid,1114long
+381,Mixed cystic_solid,1114trans
+382,Mixed cystic_solid,0218_1left
+383,Mixed cystic_solid,0218_1right
+384,Entirely or almost entirely solid,0856long
+385,Mixed cystic_solid,0856trans
+386,Mixed cystic_solid,1323long
+387,Cystic,1323trans
+388,Mixed cystic_solid,0500long
+389,Mixed cystic_solid,0500trans
+390,Spongiform,0751long
+391,Mixed cystic_solid,0751trans
+392,Mixed cystic_solid,0181long
+393,Mixed cystic_solid,0181trans
+394,Mixed cystic_solid,0469left
+395,Mixed cystic_solid,0469right
+396,Mixed cystic_solid,0190long
+397,Mixed cystic_solid,0190trans
+398,Entirely or almost entirely solid,0141_1long
+399,Mixed cystic_solid,0141_1trans
+400,Entirely or almost entirely solid,0347_1long
+401,Entirely or almost entirely solid,0347_1trans
+402,Mixed cystic_solid,1187long
+403,Mixed cystic_solid,1187trans
+404,Entirely or almost entirely solid,0358long
+405,Entirely or almost entirely solid,0358trans
+406,Mixed cystic_solid,0177long
+407,Entirely or almost entirely solid,0177trans
+408,Mixed cystic_solid,0182left
+409,Mixed cystic_solid,0182right
+410,Mixed cystic_solid,0078_1long
+411,Entirely or almost entirely solid,0078_1trans
+412,Mixed cystic_solid,0254long
+413,Mixed cystic_solid,0254trans
+414,Mixed cystic_solid,0171_1long
+415,Entirely or almost entirely solid,0171_1trans
+416,Mixed cystic_solid,0740long
+417,Mixed cystic_solid,0740trans
+418,Mixed cystic_solid,1036long
+419,Mixed cystic_solid,1036trans
+420,Mixed cystic_solid,0909long
+421,Mixed cystic_solid,0909trans
+422,Mixed cystic_solid,1380long
+423,Mixed cystic_solid,1380trans
+424,Entirely or almost entirely solid,0026long
+425,Entirely or almost entirely solid,0026trans
+426,Mixed cystic_solid,1106left
+427,Mixed cystic_solid,1106right
+428,Cystic,1447long
+429,Cystic,1447trans
+430,Mixed cystic_solid,0285long
+431,Mixed cystic_solid,0285trans
+432,Mixed cystic_solid,0930long
+433,Mixed cystic_solid,0930trans
+434,Mixed cystic_solid,0912long
+435,Mixed cystic_solid,0912trans
+436,Mixed cystic_solid,1212long
+437,Mixed cystic_solid,1212trans
+438,Mixed cystic_solid,0902long
+439,Mixed cystic_solid,0902trans
+440,Mixed cystic_solid,0065_2long
+441,Mixed cystic_solid,0065_2trans
+442,Cystic,0293left
+443,Cystic,0293right
+444,Mixed cystic_solid,0298left
+445,Mixed cystic_solid,0298right
+446,Mixed cystic_solid,1072long
+447,Mixed cystic_solid,1072trans
+448,Mixed cystic_solid,0790long
+449,Mixed cystic_solid,0790trans
+450,Mixed cystic_solid,0722_1long
+451,Mixed cystic_solid,0722_1trans
+452,Cystic,0781long
+453,Cystic,0781trans
+454,Entirely or almost entirely solid,0437long
+455,Entirely or almost entirely solid,0437trans
+456,Mixed cystic_solid,0393left
+457,Mixed cystic_solid,0393right
+458,Mixed cystic_solid,0659long
+459,Mixed cystic_solid,0659trans
+460,Mixed cystic_solid,0643long
+461,Cystic,0643trans
+462,Cystic,1356long
+463,Cystic,1356trans
+464,Mixed cystic_solid,0523long
+465,Mixed cystic_solid,0523trans
+466,Entirely or almost entirely solid,1075_2long
+467,Mixed cystic_solid,1075_2trans
+468,Mixed cystic_solid,0925long
+469,Mixed cystic_solid,0925trans
+470,Mixed cystic_solid,0046long
+471,Mixed cystic_solid,0046trans
+472,Mixed cystic_solid,0572long
+473,Mixed cystic_solid,0572trans
+474,Mixed cystic_solid,0169_1long
+475,Entirely or almost entirely solid,0169_1trans
+476,Entirely or almost entirely solid,1089long
+477,Entirely or almost entirely solid,1089trans
+478,Mixed cystic_solid,0827long
+479,Mixed cystic_solid,0827trans
+480,Mixed cystic_solid,1216_1long
+481,Entirely or almost entirely solid,1216_1trans
+482,Entirely or almost entirely solid,0968long
+483,Entirely or almost entirely solid,0968trans
+484,Mixed cystic_solid,0906long
+485,Mixed cystic_solid,0906trans
+486,Mixed cystic_solid,0551long
+487,Mixed cystic_solid,0551trans
+488,Mixed cystic_solid,0374long
+489,Mixed cystic_solid,0374trans
+490,Mixed cystic_solid,0788long
+491,Mixed cystic_solid,0788trans
+492,Mixed cystic_solid,1267long
+493,Mixed cystic_solid,1267trans
+494,Entirely or almost entirely solid,0652long
+495,Entirely or almost entirely solid,0652trans
+496,Mixed cystic_solid,0360long
+497,Mixed cystic_solid,0360trans
+498,Mixed cystic_solid,0232long
+499,Mixed cystic_solid,0232trans
+500,Mixed cystic_solid,1105long
+501,Mixed cystic_solid,1105trans
+502,Mixed cystic_solid,1116_2long
+503,Mixed cystic_solid,1116_2trans
+504,Mixed cystic_solid,0097long
+505,Mixed cystic_solid,0097trans
+506,Mixed cystic_solid,0452_2long
+507,Mixed cystic_solid,0452_2trans
+508,Mixed cystic_solid,0079long
+509,Mixed cystic_solid,0079trans
+510,Entirely or almost entirely solid,0464long
+511,Entirely or almost entirely solid,0464trans
+512,Mixed cystic_solid,0257long
+513,Mixed cystic_solid,0257trans
+514,Mixed cystic_solid,0805long
+515,Mixed cystic_solid,0805trans
+516,Mixed cystic_solid,0898long
+517,Mixed cystic_solid,0898trans
+518,Mixed cystic_solid,0794_2long
+519,Entirely or almost entirely solid,0794_2trans
+520,Mixed cystic_solid,0641long
+521,Mixed cystic_solid,0641trans
+522,Spongiform,0717long
+523,Spongiform,0717trans
+524,Mixed cystic_solid,0701long
+525,Mixed cystic_solid,0701trans
+526,Mixed cystic_solid,0890long
+527,Mixed cystic_solid,0890trans
+528,Mixed cystic_solid,0051long
+529,Mixed cystic_solid,0051trans
+530,Mixed cystic_solid,0367long
+531,Mixed cystic_solid,0367trans
+532,Mixed cystic_solid,0058long
+533,Mixed cystic_solid,0058trans
+534,Entirely or almost entirely solid,0284long
+535,Entirely or almost entirely solid,0284trans
+536,Mixed cystic_solid,1293long
+537,Mixed cystic_solid,1293trans
+538,Mixed cystic_solid,0954long
+539,Entirely or almost entirely solid,0954trans
+540,Mixed cystic_solid,0294long
+541,Entirely or almost entirely solid,0294trans
+542,Mixed cystic_solid,1265long
+543,Mixed cystic_solid,1265trans
+544,Mixed cystic_solid,1177long
+545,Mixed cystic_solid,1177trans
+546,Mixed cystic_solid,0708long
+547,Mixed cystic_solid,0708trans
+548,Entirely or almost entirely solid,0229long
+549,Entirely or almost entirely solid,0229trans
+550,Mixed cystic_solid,0511long
+551,Mixed cystic_solid,0511trans
+552,Mixed cystic_solid,1388long
+553,Mixed cystic_solid,1388trans
+554,Mixed cystic_solid,0935long
+555,Mixed cystic_solid,0935trans
+556,Mixed cystic_solid,1008long
+557,Mixed cystic_solid,1008trans
+558,Cystic,1052long
+559,Cystic,1052trans
+560,Mixed cystic_solid,1211long
+561,Mixed cystic_solid,1211trans
+562,Mixed cystic_solid,0662_1long
+563,Mixed cystic_solid,0662_1trans
+564,Mixed cystic_solid,0356long
+565,Mixed cystic_solid,0356trans
+566,Mixed cystic_solid,0062_1long
+567,Mixed cystic_solid,0062_1trans
+568,Mixed cystic_solid,1282long
+569,Mixed cystic_solid,1282trans
+570,Entirely or almost entirely solid,0129long
+571,Mixed cystic_solid,0129trans
+572,Mixed cystic_solid,0681long
+573,Mixed cystic_solid,0681trans
+574,Mixed cystic_solid,0602long
+575,Entirely or almost entirely solid,0602trans
+576,Mixed cystic_solid,0451_3long
+577,Mixed cystic_solid,0451_3trans
+578,Mixed cystic_solid,0961_2long
+579,Entirely or almost entirely solid,0961_2trans
+580,Mixed cystic_solid,0844long
+581,Mixed cystic_solid,0844trans
+582,Mixed cystic_solid,1121long
+583,Mixed cystic_solid,1121trans
+584,Entirely or almost entirely solid,0346long
+585,Entirely or almost entirely solid,0346trans
+586,Mixed cystic_solid,0615long
+587,Mixed cystic_solid,0615trans
+588,Mixed cystic_solid,0335_2long
+589,Mixed cystic_solid,0335_2trans
+590,Mixed cystic_solid,1079long
+591,Mixed cystic_solid,1079trans
+592,Mixed cystic_solid,1010long
+593,Mixed cystic_solid,1010trans
+594,Entirely or almost entirely solid,1382long
+595,Entirely or almost entirely solid,1382trans
+596,Mixed cystic_solid,1170_2long
+597,Mixed cystic_solid,1170_2trans
+598,Mixed cystic_solid,0096long
+599,Mixed cystic_solid,0096trans
+600,Mixed cystic_solid,0634long
+601,Entirely or almost entirely solid,0634trans
+602,Mixed cystic_solid,0792long
+603,Mixed cystic_solid,0792trans
+604,Cystic,0191left
+605,Mixed cystic_solid,0191right
+606,Mixed cystic_solid,0115long
+607,Mixed cystic_solid,0115trans
+608,Mixed cystic_solid,1264long
+609,Mixed cystic_solid,1264trans
+610,Mixed cystic_solid,0216long
+611,Mixed cystic_solid,0216trans
+612,Mixed cystic_solid,1029long
+613,Mixed cystic_solid,1029trans
+614,Entirely or almost entirely solid,1015long
+615,Entirely or almost entirely solid,1015trans
+616,Entirely or almost entirely solid,0568long
+617,Entirely or almost entirely solid,0568trans
+618,Entirely or almost entirely solid,0268long
+619,Mixed cystic_solid,0268trans
+620,Entirely or almost entirely solid,0355_1long
+621,Entirely or almost entirely solid,0355_1trans
+622,Mixed cystic_solid,0101_1long
+623,Mixed cystic_solid,0101_1trans
+624,Entirely or almost entirely solid,0983_1long
+625,Mixed cystic_solid,0983_1trans
+626,Mixed cystic_solid,0991_1long
+627,Mixed cystic_solid,0991_1trans
+628,Entirely or almost entirely solid,0325long
+629,Mixed cystic_solid,0325trans
+630,Mixed cystic_solid,1169long
+631,Mixed cystic_solid,1169trans
+632,Mixed cystic_solid,0660_2long
+633,Mixed cystic_solid,0660_2trans
+634,Spongiform,0800long
+635,Mixed cystic_solid,0800trans
+636,Mixed cystic_solid,0453_2long
+637,Mixed cystic_solid,0453_2trans
+638,Entirely or almost entirely solid,0301long
+639,Mixed cystic_solid,0301trans
+640,Entirely or almost entirely solid,1423long
+641,Mixed cystic_solid,1423trans
+642,Spongiform,0153long
+643,Mixed cystic_solid,0153trans
+644,Mixed cystic_solid,0125long
+645,Mixed cystic_solid,0125trans
+646,Mixed cystic_solid,1387long
+647,Mixed cystic_solid,1387trans
+648,Entirely or almost entirely solid,0468long
+649,Spongiform,0468trans
+650,Mixed cystic_solid,1070long
+651,Mixed cystic_solid,1070trans
+652,Entirely or almost entirely solid,0404_1long
+653,Entirely or almost entirely solid,0404_1trans
+654,Mixed cystic_solid,1101_1long
+655,Mixed cystic_solid,1101_1trans
+656,Entirely or almost entirely solid,0152_2long
+657,Mixed cystic_solid,0152_2trans
+658,Mixed cystic_solid,0565left
+659,Mixed cystic_solid,0565right
+660,Cystic,1332long
+661,Cystic,1332trans
+662,Mixed cystic_solid,0009long
+663,Mixed cystic_solid,0009trans
+664,Mixed cystic_solid,0674long
+665,Mixed cystic_solid,0674trans
+666,Entirely or almost entirely solid,0278long
+667,Entirely or almost entirely solid,0278trans
+668,Mixed cystic_solid,1346long
+669,Mixed cystic_solid,1346trans
+670,Mixed cystic_solid,1013long
+671,Mixed cystic_solid,1013trans
+672,Mixed cystic_solid,0723long
+673,Mixed cystic_solid,0723trans
+674,Mixed cystic_solid,1011long
+675,Mixed cystic_solid,1011trans
+676,Mixed cystic_solid,0923_1long
+677,Mixed cystic_solid,0923_1trans
+678,Mixed cystic_solid,0226long
+679,Mixed cystic_solid,0226trans
+680,Mixed cystic_solid,0156long
+681,Mixed cystic_solid,0156trans
+682,Mixed cystic_solid,0867long
+683,Mixed cystic_solid,0867trans
+684,Mixed cystic_solid,0959long
+685,Mixed cystic_solid,0959trans
+686,Mixed cystic_solid,0532long
+687,Mixed cystic_solid,0532trans
+688,Entirely or almost entirely solid,0477long
+689,Entirely or almost entirely solid,0477trans
+690,Mixed cystic_solid,1404long
+691,Mixed cystic_solid,1404trans
+692,Entirely or almost entirely solid,1405left
+693,Entirely or almost entirely solid,1405right
+694,Mixed cystic_solid,0966long
+695,Entirely or almost entirely solid,0966trans
+696,Entirely or almost entirely solid,0266_2long
+697,Entirely or almost entirely solid,0266_2trans
+698,Cystic,0939long
+699,Cystic,0939trans
+700,Entirely or almost entirely solid,0220long
+701,Mixed cystic_solid,0220trans
+702,Entirely or almost entirely solid,0251long
+703,Entirely or almost entirely solid,0251trans
+704,Mixed cystic_solid,0149_2long
+705,Mixed cystic_solid,0149_2trans
+706,Mixed cystic_solid,0155long
+707,Mixed cystic_solid,0155trans
+708,Spongiform,0784long
+709,Spongiform,0784trans
+710,Mixed cystic_solid,1288long
+711,Mixed cystic_solid,1288trans
+712,Cystic,0848long
+713,Cystic,0848trans
+714,Entirely or almost entirely solid,0373long
+715,Entirely or almost entirely solid,0373trans
+716,Mixed cystic_solid,1439_2long
+717,Mixed cystic_solid,1439_2trans
+718,Mixed cystic_solid,0482_1long
+719,Mixed cystic_solid,0482_1trans
+720,Mixed cystic_solid,0368long
+721,Entirely or almost entirely solid,0368trans
+722,Mixed cystic_solid,0168long
+723,Mixed cystic_solid,0168trans
+724,Spongiform,1175long
+725,Mixed cystic_solid,1175trans
+726,Mixed cystic_solid,0352long
+727,Mixed cystic_solid,0352trans
+728,Mixed cystic_solid,1058long
+729,Mixed cystic_solid,1058trans
+730,Entirely or almost entirely solid,0663long
+731,Mixed cystic_solid,0663trans
+732,Mixed cystic_solid,0544_1long
+733,Mixed cystic_solid,0544_1trans
+734,Mixed cystic_solid,1233long
+735,Mixed cystic_solid,1233trans
+736,Mixed cystic_solid,1225long
+737,Mixed cystic_solid,1225trans
+738,Mixed cystic_solid,1053long
+739,Entirely or almost entirely solid,1053trans
+740,Entirely or almost entirely solid,0726long
+741,Mixed cystic_solid,0726trans
+742,Mixed cystic_solid,0707long
+743,Entirely or almost entirely solid,0707trans
+744,Mixed cystic_solid,0473_1long
+745,Mixed cystic_solid,0473_1trans
+746,Entirely or almost entirely solid,0305long
+747,Mixed cystic_solid,0305trans
+748,Mixed cystic_solid,0287long
+749,Mixed cystic_solid,0287trans
+750,Cystic,1245left
+751,Mixed cystic_solid,1245right
+752,Cystic,0795long
+753,Cystic,0795trans
+754,Spongiform,0713long
+755,Spongiform,0713trans
+756,Spongiform,1019long
+757,Entirely or almost entirely solid,1019trans
+758,Mixed cystic_solid,0179long
+759,Mixed cystic_solid,0179trans
+760,Mixed cystic_solid,0280left
+761,Entirely or almost entirely solid,0280right
+762,Mixed cystic_solid,0658long
+763,Mixed cystic_solid,0658trans
+764,Entirely or almost entirely solid,1071long
+765,Entirely or almost entirely solid,1071trans
+766,Entirely or almost entirely solid,0295long
+767,Mixed cystic_solid,0295trans
+768,Mixed cystic_solid,0343long
+769,Mixed cystic_solid,0343trans
+770,Mixed cystic_solid,1398long
+771,Mixed cystic_solid,1398trans
+772,Mixed cystic_solid,0807long
+773,Entirely or almost entirely solid,0807trans
+774,Entirely or almost entirely solid,0809_1left
+775,Entirely or almost entirely solid,0809_1right
+776,Mixed cystic_solid,1207long
+777,Mixed cystic_solid,1207trans
+778,Mixed cystic_solid,1179long
+779,Mixed cystic_solid,1179trans
+780,Mixed cystic_solid,0696long
+781,Mixed cystic_solid,0696trans
+782,Entirely or almost entirely solid,0826long
+783,Mixed cystic_solid,0826trans
+784,Mixed cystic_solid,0613long
+785,Mixed cystic_solid,0613trans
+786,Mixed cystic_solid,0725long
+787,Mixed cystic_solid,0725trans
+788,Mixed cystic_solid,1190long
+789,Mixed cystic_solid,1190trans
+790,Mixed cystic_solid,0999long
+791,Mixed cystic_solid,0999trans
+792,Mixed cystic_solid,0969long
+793,Entirely or almost entirely solid,0969trans
+794,Entirely or almost entirely solid,1111long
+795,Entirely or almost entirely solid,1111trans
+796,Entirely or almost entirely solid,0007long
+797,Entirely or almost entirely solid,0007trans
+798,Mixed cystic_solid,1312_2long
+799,Mixed cystic_solid,1312_2trans
+800,Mixed cystic_solid,0606_2long
+801,Mixed cystic_solid,0606_2trans
+802,Mixed cystic_solid,0582long
+803,Entirely or almost entirely solid,0582trans
+804,Entirely or almost entirely solid,0715long
+805,Entirely or almost entirely solid,0715trans
+806,Mixed cystic_solid,0987long
+807,Mixed cystic_solid,0987trans
+808,Mixed cystic_solid,0427long
+809,Mixed cystic_solid,0427trans
+810,Mixed cystic_solid,1168long
+811,Mixed cystic_solid,1168trans
+812,Entirely or almost entirely solid,0246long
+813,Entirely or almost entirely solid,0246trans
+814,Entirely or almost entirely solid,0631long
+815,Entirely or almost entirely solid,0631trans
+816,Entirely or almost entirely solid,0991_2long
+817,Entirely or almost entirely solid,0991_2trans
+818,Mixed cystic_solid,0072long
+819,Mixed cystic_solid,0072trans
+820,Mixed cystic_solid,0225long
+821,Mixed cystic_solid,0225trans
+822,Mixed cystic_solid,0012long
+823,Mixed cystic_solid,0012trans
+824,Mixed cystic_solid,1203long
+825,Mixed cystic_solid,1203trans
+826,Mixed cystic_solid,0318long
+827,Entirely or almost entirely solid,0318trans
+828,Spongiform,0976long
+829,Entirely or almost entirely solid,0976trans
+830,Mixed cystic_solid,1240long
+831,Mixed cystic_solid,1240trans
+832,Mixed cystic_solid,0719long
+833,Mixed cystic_solid,0719trans
+834,Mixed cystic_solid,0961_1long
+835,Mixed cystic_solid,0961_1trans
+836,Cystic,0083long
+837,Cystic,0083trans
+838,Cystic,0194long
+839,Cystic,0194trans
+840,Mixed cystic_solid,0507long
+841,Entirely or almost entirely solid,0507trans
+842,Entirely or almost entirely solid,0487long
+843,Entirely or almost entirely solid,0487trans
+844,Entirely or almost entirely solid,1258_2long
+845,Entirely or almost entirely solid,1258_2trans
+846,Entirely or almost entirely solid,0227long
+847,Entirely or almost entirely solid,0227trans
+848,Entirely or almost entirely solid,0917left
+849,Entirely or almost entirely solid,0917right
+850,Entirely or almost entirely solid,0600_1long
+851,Entirely or almost entirely solid,0600_1trans
+852,Mixed cystic_solid,1345_2left
+853,Cystic,1345_2right
+854,Entirely or almost entirely solid,0130long
+855,Mixed cystic_solid,1046long
+856,Entirely or almost entirely solid,0130trans
+857,Entirely or almost entirely solid,0020long
+858,Entirely or almost entirely solid,0020trans
+859,Entirely or almost entirely solid,0798long
+860,Entirely or almost entirely solid,0798trans
+861,Entirely or almost entirely solid,1174long
+862,Entirely or almost entirely solid,1174trans
+863,Entirely or almost entirely solid,0390long
+864,Entirely or almost entirely solid,0390trans
+865,Entirely or almost entirely solid,0501long
+866,Entirely or almost entirely solid,0501trans
+867,Entirely or almost entirely solid,0369long
+868,Entirely or almost entirely solid,0369trans
+869,Entirely or almost entirely solid,0454long
+870,Entirely or almost entirely solid,0454trans
+871,Entirely or almost entirely solid,0796long
+872,Entirely or almost entirely solid,0122long
+873,Entirely or almost entirely solid,0122trans
+874,Entirely or almost entirely solid,0173long
+875,Entirely or almost entirely solid,0173trans
+876,Entirely or almost entirely solid,0610long
+877,Entirely or almost entirely solid,0610trans
+878,Mixed cystic_solid,0187long
+879,Mixed cystic_solid,0187trans
+880,Entirely or almost entirely solid,1121_1long
+881,Entirely or almost entirely solid,1121_1trans
+882,Mixed cystic_solid,1325long
+883,Entirely or almost entirely solid,1325trans
+884,Entirely or almost entirely solid,0721long
+885,Entirely or almost entirely solid,0721trans
+886,Entirely or almost entirely solid,0064_2long
+887,Entirely or almost entirely solid,0064_2trans
+888,Entirely or almost entirely solid,0364long
+889,Entirely or almost entirely solid,0364trans
+890,Entirely or almost entirely solid,0831_1left
+891,Entirely or almost entirely solid,0831_1right
+892,Entirely or almost entirely solid,0685_1long
+893,Entirely or almost entirely solid,0685_1trans
+894,Entirely or almost entirely solid,1312_1long
+895,Entirely or almost entirely solid,1312_1trans
+896,Entirely or almost entirely solid,0188long
+897,Entirely or almost entirely solid,0188trans
+898,Mixed cystic_solid,1287long
+899,Mixed cystic_solid,1287trans
+900,Entirely or almost entirely solid,1004_1trans
+901,Entirely or almost entirely solid,0728long
+902,Entirely or almost entirely solid,0728trans
+903,Entirely or almost entirely solid,0362_1long
+904,Entirely or almost entirely solid,0977long
+905,Entirely or almost entirely solid,0977trans
+906,Entirely or almost entirely solid,1004_1long
+907,Entirely or almost entirely solid,0362_1trans
+908,Entirely or almost entirely solid,0410long
+909,Entirely or almost entirely solid,0410trans
+910,Entirely or almost entirely solid,0796trans
+911,Entirely or almost entirely solid,1393long
+912,Entirely or almost entirely solid,1393trans
+913,Entirely or almost entirely solid,0682long
+914,Entirely or almost entirely solid,0682trans
+915,Entirely or almost entirely solid,0376long
+916,Entirely or almost entirely solid,0376trans
+917,Entirely or almost entirely solid,1266long
+918,Entirely or almost entirely solid,1266trans
+919,Entirely or almost entirely solid,0953long
+920,Entirely or almost entirely solid,0953trans
+921,Mixed cystic_solid,1046trans
+922,Entirely or almost entirely solid,0855_2long
+923,Entirely or almost entirely solid,0855_2trans
+924,Entirely or almost entirely solid,1165left
+925,Mixed cystic_solid,1165right
+926,Entirely or almost entirely solid,0432long
+927,Entirely or almost entirely solid,0432trans
+928,Entirely or almost entirely solid,0516_2long
+929,Entirely or almost entirely solid,0516_2trans
+930,Entirely or almost entirely solid,0967long
+931,Entirely or almost entirely solid,0967trans
+932,Entirely or almost entirely solid,1371long
+933,Entirely or almost entirely solid,1371trans
+934,Entirely or almost entirely solid,0172left
+935,Entirely or almost entirely solid,0172right
+936,Entirely or almost entirely solid,0315_1long
+937,Entirely or almost entirely solid,0315_1trans
+938,Mixed cystic_solid,0502long
+939,Mixed cystic_solid,0502trans
+940,Mixed cystic_solid,1007long
+941,Mixed cystic_solid,1007trans
+942,Entirely or almost entirely solid,0307long
+943,Entirely or almost entirely solid,0307trans
+944,Entirely or almost entirely solid,0693trans
+945,Entirely or almost entirely solid,0066long
+946,Mixed cystic_solid,1096long
+947,Mixed cystic_solid,1096trans
+948,Mixed cystic_solid,1154long
+949,Mixed cystic_solid,1154trans
+950,Entirely or almost entirely solid,0693long
+951,Mixed cystic_solid,0920long
+952,Mixed cystic_solid,0920trans
+953,Mixed cystic_solid,0885long
+954,Mixed cystic_solid,0885trans
+955,Mixed cystic_solid,0859long
+956,Mixed cystic_solid,0859trans
+957,Mixed cystic_solid,0166long
+958,Mixed cystic_solid,0166trans
+959,Mixed cystic_solid,1054long
+960,Mixed cystic_solid,1054trans
+961,Entirely or almost entirely solid,1025long
+962,Mixed cystic_solid,1025trans
+963,Mixed cystic_solid,0808long
+964,Mixed cystic_solid,0808trans
+965,Mixed cystic_solid,0420long
+966,Mixed cystic_solid,0420trans
+967,Mixed cystic_solid,0872long
+968,Mixed cystic_solid,0872trans
+969,Mixed cystic_solid,0688long
+970,Mixed cystic_solid,0688trans
+971,Cystic,0736long
+972,Mixed cystic_solid,0736trans
+973,Mixed cystic_solid,1216_2long
+974,Mixed cystic_solid,1216_2trans
+975,Mixed cystic_solid,0974long
+976,Mixed cystic_solid,0974trans
+977,Mixed cystic_solid,0904left
+978,Mixed cystic_solid,0904right
+979,Mixed cystic_solid,1301left
+980,Mixed cystic_solid,1301right
+981,Mixed cystic_solid,0394long
+982,Entirely or almost entirely solid,0066trans
+983,Mixed cystic_solid,0660_1long
+984,Mixed cystic_solid,0660_1trans
+985,Mixed cystic_solid,0903long
+986,Entirely or almost entirely solid,0922long
+987,Entirely or almost entirely solid,0922trans
+988,Mixed cystic_solid,0747long
+989,Mixed cystic_solid,0747trans
+990,Mixed cystic_solid,1038long
+991,Mixed cystic_solid,1038trans
+992,Mixed cystic_solid,0034long
+993,Mixed cystic_solid,0034trans
+994,Spongiform,0899_1long
+995,Entirely or almost entirely solid,0899_1trans
+996,Mixed cystic_solid,0252long
+997,Mixed cystic_solid,1101_2long
+998,Mixed cystic_solid,1101_2trans
+999,Mixed cystic_solid,0252trans
+1000,Mixed cystic_solid,0387long
+1001,Mixed cystic_solid,0387trans
+1002,Mixed cystic_solid,0533long
+1003,Mixed cystic_solid,0533trans
+1004,Mixed cystic_solid,0481long
+1005,Mixed cystic_solid,0481trans
+1006,Mixed cystic_solid,0903trans
+1007,Entirely or almost entirely solid,1248long
+1008,Mixed cystic_solid,1248trans
+1009,Mixed cystic_solid,0545long
+1010,Mixed cystic_solid,0545trans
+1011,Cystic,0699long
+1012,Mixed cystic_solid,0699trans
+1013,Spongiform,0970long
+1014,Entirely or almost entirely solid,0970trans
+1015,Mixed cystic_solid,0531long
+1016,Mixed cystic_solid,0531trans
+1017,Mixed cystic_solid,0394trans
+1018,Entirely or almost entirely solid,1436_1left
+1019,Entirely or almost entirely solid,1436_1right
+1020,Entirely or almost entirely solid,1047long
+1021,Entirely or almost entirely solid,1047trans
+1022,Entirely or almost entirely solid,0861long
+1023,Entirely or almost entirely solid,0861trans
+1024,Entirely or almost entirely solid,0621_2long
+1025,Entirely or almost entirely solid,0621_2trans
+1026,Entirely or almost entirely solid,1297long
+1027,Entirely or almost entirely solid,1297trans
+1028,Entirely or almost entirely solid,1204long
+1029,Entirely or almost entirely solid,1204trans
+1030,Entirely or almost entirely solid,0849long
+1031,Entirely or almost entirely solid,0849trans
+1032,Entirely or almost entirely solid,0518left
+1033,Entirely or almost entirely solid,0518right
+1034,Entirely or almost entirely solid,0082_1long
+1035,Entirely or almost entirely solid,0082_1trans
+1036,Entirely or almost entirely solid,0657long
+1037,Entirely or almost entirely solid,0657trans
+1038,Entirely or almost entirely solid,0430long
+1039,Entirely or almost entirely solid,0430trans
+1040,Entirely or almost entirely solid,0574_1long
+1041,Entirely or almost entirely solid,0574_1trans
+1042,Entirely or almost entirely solid,0366_2long
+1043,Entirely or almost entirely solid,0366_2trans
+1044,Entirely or almost entirely solid,1004_2long
+1045,Entirely or almost entirely solid,1004_2trans
+1046,Entirely or almost entirely solid,1458long
+1047,Entirely or almost entirely solid,1458trans
+1048,Entirely or almost entirely solid,0992long
+1049,Entirely or almost entirely solid,0992trans
+1050,Entirely or almost entirely solid,0178long
+1051,Entirely or almost entirely solid,0178trans
+1052,Entirely or almost entirely solid,0349_2long
+1053,Entirely or almost entirely solid,0349_2trans
+1054,Entirely or almost entirely solid,0662_2long
+1055,Entirely or almost entirely solid,0662_2trans
+1056,Entirely or almost entirely solid,0223long
+1057,Entirely or almost entirely solid,0223trans
+1058,Entirely or almost entirely solid,0392_2long
+1059,Entirely or almost entirely solid,0392_2trans
+1060,Entirely or almost entirely solid,0564_2long
+1061,Entirely or almost entirely solid,0564_2trans
+1062,Entirely or almost entirely solid,0067long
+1063,Entirely or almost entirely solid,0067trans
+1064,Entirely or almost entirely solid,1270left
+1065,Entirely or almost entirely solid,1270right
+1066,Entirely or almost entirely solid,0722_2long
+1067,Entirely or almost entirely solid,0722_2trans
+1068,Entirely or almost entirely solid,1397long
+1069,Entirely or almost entirely solid,1397trans
+1070,Entirely or almost entirely solid,0185long
+1071,Entirely or almost entirely solid,0185trans
+1072,Entirely or almost entirely solid,1074long
+1073,Entirely or almost entirely solid,1074trans
+1074,Entirely or almost entirely solid,0057_2long
+1075,Entirely or almost entirely solid,0057_2trans
+1076,Entirely or almost entirely solid,0768long
+1077,Entirely or almost entirely solid,0768trans
+1078,Entirely or almost entirely solid,0455long
+1079,Entirely or almost entirely solid,0455trans
+1080,Mixed cystic_solid,0667long
+1081,Entirely or almost entirely solid,0667trans
+1082,Entirely or almost entirely solid,0236long
+1083,Entirely or almost entirely solid,0236trans
+1084,Entirely or almost entirely solid,0388long
+1085,Entirely or almost entirely solid,0388trans
+1086,Entirely or almost entirely solid,0084long
+1087,Entirely or almost entirely solid,0084trans
+1088,Entirely or almost entirely solid,0080long
+1089,Entirely or almost entirely solid,0080trans
+1090,Entirely or almost entirely solid,0813long
+1091,Entirely or almost entirely solid,0813trans
+1092,Entirely or almost entirely solid,0575_1long
+1093,Entirely or almost entirely solid,0575_1trans
+1094,Entirely or almost entirely solid,0311long
+1095,Entirely or almost entirely solid,0311trans
+1096,Entirely or almost entirely solid,0331_1long
+1097,Entirely or almost entirely solid,0331_1trans
+1098,Entirely or almost entirely solid,1016_1long
+1099,Entirely or almost entirely solid,1016_1trans
+1100,Entirely or almost entirely solid,1170_1long
+1101,Entirely or almost entirely solid,1170_1trans
+1102,Entirely or almost entirely solid,0829long
+1103,Entirely or almost entirely solid,0829trans
+1104,Entirely or almost entirely solid,0608long
+1105,Entirely or almost entirely solid,0608trans
+1106,Entirely or almost entirely solid,0211long
+1107,Entirely or almost entirely solid,0211trans
+1108,Entirely or almost entirely solid,0385_1long
+1109,Entirely or almost entirely solid,0385_1trans
+1110,Entirely or almost entirely solid,1335long
+1111,Entirely or almost entirely solid,1335trans
+1112,Entirely or almost entirely solid,0876long
+1113,Entirely or almost entirely solid,0876trans
+1114,Entirely or almost entirely solid,0139_2long
+1115,Entirely or almost entirely solid,0139_2trans
+1116,Entirely or almost entirely solid,0281long
+1117,Entirely or almost entirely solid,0281trans
+1118,Entirely or almost entirely solid,0433long
+1119,Entirely or almost entirely solid,0433trans
+1120,Entirely or almost entirely solid,1188long
+1121,Entirely or almost entirely solid,1188trans
+1122,Entirely or almost entirely solid,0911long
+1123,Entirely or almost entirely solid,0911trans
+1124,Entirely or almost entirely solid,0762_1long
+1125,Entirely or almost entirely solid,0762_1trans
+1126,Entirely or almost entirely solid,0513long
+1127,Entirely or almost entirely solid,0513trans
+1128,Entirely or almost entirely solid,1316long
+1129,Entirely or almost entirely solid,1316trans
+1130,Entirely or almost entirely solid,1123long
+1131,Entirely or almost entirely solid,1123trans
+1132,Entirely or almost entirely solid,0484long
+1133,Entirely or almost entirely solid,0484trans
+1134,Entirely or almost entirely solid,0319long
+1135,Entirely or almost entirely solid,0319trans
+1136,Entirely or almost entirely solid,0982long
+1137,Entirely or almost entirely solid,0982trans
+1138,Entirely or almost entirely solid,1241long
+1139,Entirely or almost entirely solid,1241trans
+1140,Entirely or almost entirely solid,0075long
+1141,Entirely or almost entirely solid,0075trans
+1142,Entirely or almost entirely solid,1300long
+1143,Entirely or almost entirely solid,1300trans
+1144,Entirely or almost entirely solid,0639left
+1145,Entirely or almost entirely solid,0639right
+1146,Entirely or almost entirely solid,1296left
+1147,Entirely or almost entirely solid,1296right
+1148,Entirely or almost entirely solid,0853long
+1149,Entirely or almost entirely solid,0853trans
+1150,Mixed cystic_solid,0025long
+1151,Entirely or almost entirely solid,0025trans
+1152,Mixed cystic_solid,0426long
+1153,Mixed cystic_solid,0426trans
+1154,Entirely or almost entirely solid,0047long
+1155,Mixed cystic_solid,0047trans
+1156,Mixed cystic_solid,0585long
+1157,Mixed cystic_solid,0585trans
+1158,Mixed cystic_solid,0329_2long
+1159,Mixed cystic_solid,0329_2trans
+1160,Entirely or almost entirely solid,0401_1long
+1161,Mixed cystic_solid,0401_1trans
+1162,Mixed cystic_solid,1243_2long
+1163,Mixed cystic_solid,1243_2trans
+1164,Mixed cystic_solid,0994long
+1165,Mixed cystic_solid,0994trans
+1166,Mixed cystic_solid,0676_2long
+1167,Entirely or almost entirely solid,0676_2trans
+1168,Mixed cystic_solid,0918long
+1169,Mixed cystic_solid,0918trans
+1170,Mixed cystic_solid,0988long
+1171,Mixed cystic_solid,0988trans
+1172,Spongiform,1219long
+1173,Mixed cystic_solid,1219trans
+1174,Cystic,0448long
+1175,Mixed cystic_solid,0448trans
+1176,Mixed cystic_solid,0563long
+1177,Mixed cystic_solid,0563trans
+1178,Mixed cystic_solid,0136_1long
+1179,Mixed cystic_solid,0136_1trans
+1180,Entirely or almost entirely solid,0365long
+1181,Entirely or almost entirely solid,0365trans
+1182,Mixed cystic_solid,0521long
+1183,Entirely or almost entirely solid,0521trans
+1184,Mixed cystic_solid,1150long
+1185,Mixed cystic_solid,1150trans
+1186,Spongiform,0780long
+1187,Spongiform,0780trans
+1188,Entirely or almost entirely solid,0628long
+1189,Mixed cystic_solid,0628trans
+1190,Mixed cystic_solid,1006long
+1191,Mixed cystic_solid,1006trans
+1192,Mixed cystic_solid,1113long
+1193,Mixed cystic_solid,1113trans
+1194,Mixed cystic_solid,0106long
+1195,Entirely or almost entirely solid,0106trans
+1196,Mixed cystic_solid,0558long
+1197,Mixed cystic_solid,0558trans
+1198,Mixed cystic_solid,1126long
+1199,Mixed cystic_solid,1126trans
+1200,Spongiform,0255long
+1201,Entirely or almost entirely solid,0255trans
+1202,Mixed cystic_solid,1045long
+1203,Mixed cystic_solid,1045trans
+1204,Mixed cystic_solid,1442long
+1205,Mixed cystic_solid,1442trans
+1206,Mixed cystic_solid,0623long
+1207,Entirely or almost entirely solid,0623trans
+1208,Spongiform,0056long
+1209,Entirely or almost entirely solid,0056trans
+1210,Mixed cystic_solid,0205long
+1211,Mixed cystic_solid,0205trans
+1212,Entirely or almost entirely solid,0963long
+1213,Entirely or almost entirely solid,0963trans
+1214,Entirely or almost entirely solid,0499long
+1215,Entirely or almost entirely solid,0499trans
+1216,Mixed cystic_solid,0436long
+1217,Mixed cystic_solid,0436trans
+1218,Entirely or almost entirely solid,1279long
+1219,Entirely or almost entirely solid,1279trans
+1220,Mixed cystic_solid,1090_1long
+1221,Entirely or almost entirely solid,1090_1trans
+1222,Entirely or almost entirely solid,1269long
+1223,Mixed cystic_solid,1269trans
+1224,Mixed cystic_solid,0924long
+1225,Entirely or almost entirely solid,0924trans
+1226,Mixed cystic_solid,0363long
+1227,Mixed cystic_solid,0363trans
+1228,Mixed cystic_solid,1067long
+1229,Entirely or almost entirely solid,1067trans
+1230,Mixed cystic_solid,1059long
+1231,Mixed cystic_solid,1059trans
+1232,Mixed cystic_solid,0304long
+1233,Mixed cystic_solid,0304trans
+1234,Entirely or almost entirely solid,0475long
+1235,Entirely or almost entirely solid,0475trans
+1236,Entirely or almost entirely solid,1421long
+1237,Entirely or almost entirely solid,1421trans
+1238,Mixed cystic_solid,0238long
+1239,Mixed cystic_solid,0238trans
+1240,Mixed cystic_solid,0395long
+1241,Mixed cystic_solid,0395trans
+1242,Mixed cystic_solid,0755long
+1243,Mixed cystic_solid,0755trans
+1244,Mixed cystic_solid,0328left
+1245,Entirely or almost entirely solid,0328right
+1246,Spongiform,0445long
+1247,Spongiform,0445trans
+1248,Spongiform,0564_1long
+1249,Spongiform,0564_1trans
+1250,Spongiform,1158long
+1251,Spongiform,1158trans
+1252,Spongiform,0064_1long
+1253,Spongiform,0064_1trans
+1254,Spongiform,0209long
+1255,Spongiform,0209trans
+1256,Mixed cystic_solid,0881long
+1257,Spongiform,0881trans
+1258,Mixed cystic_solid,0048long
+1259,Entirely or almost entirely solid,0048trans
+1260,Mixed cystic_solid,0030long
+1261,Mixed cystic_solid,0030trans
+1262,Mixed cystic_solid,0035long
+1263,Spongiform,0035trans
+1264,Mixed cystic_solid,0090_1left
+1265,Mixed cystic_solid,0090_1right
+1266,Spongiform,0372long
+1267,Spongiform,0372trans
+1268,Spongiform,0167long
+1269,Spongiform,0167trans
+1270,Mixed cystic_solid,0996long
+1271,Spongiform,0996trans
+1272,Spongiform,0189long
+1273,Spongiform,0189trans
+1274,Spongiform,1276long
+1275,Spongiform,1276trans
+1276,Spongiform,0386long
+1277,Spongiform,0386trans
+1278,Spongiform,0144long
+1279,Spongiform,0144trans
+1280,Spongiform,1082long
+1281,Mixed cystic_solid,1082trans
+1282,Spongiform,0060long
+1283,Spongiform,0060trans
+1284,Mixed cystic_solid,0037long
+1285,Mixed cystic_solid,0037trans
+1286,Spongiform,0245long
+1287,Spongiform,0245trans
+1288,Mixed cystic_solid,1064long
+1289,Mixed cystic_solid,1064trans
+1290,Entirely or almost entirely solid,0561long
+1291,Entirely or almost entirely solid,0561trans
+1292,Entirely or almost entirely solid,1009long
+1293,Entirely or almost entirely solid,1009trans
+1294,Entirely or almost entirely solid,1200left
+1295,Entirely or almost entirely solid,1200right
+1296,Entirely or almost entirely solid,0385_2long
+1297,Entirely or almost entirely solid,0385_2trans
+1298,Entirely or almost entirely solid,1056long
+1299,Entirely or almost entirely solid,1056trans
+1300,Entirely or almost entirely solid,0510long
+1301,Entirely or almost entirely solid,0510trans
+1302,Entirely or almost entirely solid,1120long
+1303,Entirely or almost entirely solid,1120trans
+1304,Entirely or almost entirely solid,0562long
+1305,Entirely or almost entirely solid,0562trans
+1306,Entirely or almost entirely solid,0306long
+1307,Entirely or almost entirely solid,0306trans
+1308,Entirely or almost entirely solid,0210long
+1309,Entirely or almost entirely solid,0210trans
+1310,Entirely or almost entirely solid,0644long
+1311,Entirely or almost entirely solid,0644trans
+1312,Entirely or almost entirely solid,0757long
+1313,Entirely or almost entirely solid,0757trans
+1314,Entirely or almost entirely solid,0011_1long
+1315,Entirely or almost entirely solid,0011_1trans
+1316,Entirely or almost entirely solid,1112long
+1317,Entirely or almost entirely solid,1112trans
+1318,Entirely or almost entirely solid,0908long
+1319,Entirely or almost entirely solid,0908trans
+1320,Entirely or almost entirely solid,0389long
+1321,Entirely or almost entirely solid,0389trans
+1322,Entirely or almost entirely solid,0171_2long
+1323,Entirely or almost entirely solid,0171_2trans
+1324,Entirely or almost entirely solid,0858long
+1325,Entirely or almost entirely solid,0858trans
+1326,Entirely or almost entirely solid,1214long
+1327,Entirely or almost entirely solid,1214trans
+1328,Entirely or almost entirely solid,0973_1long
+1329,Entirely or almost entirely solid,0973_1trans
+1330,Entirely or almost entirely solid,0556_2long
+1331,Entirely or almost entirely solid,0556_2trans
+1332,Entirely or almost entirely solid,1196long
+1333,Entirely or almost entirely solid,1196trans
+1334,Entirely or almost entirely solid,0846long
+1335,Entirely or almost entirely solid,0846trans
+1336,Entirely or almost entirely solid,0910long
+1337,Entirely or almost entirely solid,0910trans
+1338,Entirely or almost entirely solid,0291long
+1339,Entirely or almost entirely solid,0291trans
+1340,Entirely or almost entirely solid,1039left
+1341,Entirely or almost entirely solid,1039right
+1342,Entirely or almost entirely solid,1368long
+1343,Entirely or almost entirely solid,1368trans
+1344,Entirely or almost entirely solid,0611long
+1345,Entirely or almost entirely solid,0611trans
+1346,Entirely or almost entirely solid,1280long
+1347,Entirely or almost entirely solid,1280trans
+1348,Entirely or almost entirely solid,0432_2long
+1349,Entirely or almost entirely solid,0432_2trans
+1350,Entirely or almost entirely solid,0449_1long
+1351,Entirely or almost entirely solid,0449_1trans
+1352,Entirely or almost entirely solid,0486_2long
+1353,Entirely or almost entirely solid,0486_2trans
+1354,Entirely or almost entirely solid,0877long
+1355,Entirely or almost entirely solid,0877trans
+1356,Entirely or almost entirely solid,1132long
+1357,Entirely or almost entirely solid,1132trans
+1358,Entirely or almost entirely solid,0624long
+1359,Entirely or almost entirely solid,0624trans
+1360,Cystic,1000long
+1361,Entirely or almost entirely solid,1000trans
+1362,Entirely or almost entirely solid,0599long
+1363,Entirely or almost entirely solid,0599trans
+1364,Entirely or almost entirely solid,0928long
+1365,Entirely or almost entirely solid,0928trans
+1366,Entirely or almost entirely solid,0941long
+1367,Entirely or almost entirely solid,0941trans
+1368,Mixed cystic_solid,0091long
+1369,Entirely or almost entirely solid,0091trans
+1370,Entirely or almost entirely solid,1255_2long
+1371,Entirely or almost entirely solid,1255_2trans
+1372,Entirely or almost entirely solid,0310long
+1373,Entirely or almost entirely solid,0310trans
+1374,Entirely or almost entirely solid,1326long
+1375,Entirely or almost entirely solid,1326trans
+1376,Mixed cystic_solid,1252long
+1377,Entirely or almost entirely solid,1252trans
+1378,Entirely or almost entirely solid,1003long
+1379,Entirely or almost entirely solid,1003trans
+1380,Entirely or almost entirely solid,0679long
+1381,Entirely or almost entirely solid,0679trans
+1382,Entirely or almost entirely solid,0398long
+1383,Entirely or almost entirely solid,0398trans
+1384,Entirely or almost entirely solid,1415long
+1385,Entirely or almost entirely solid,1415trans
+1386,Entirely or almost entirely solid,1162long
+1387,Entirely or almost entirely solid,1162trans
+1388,Entirely or almost entirely solid,0750long
+1389,Entirely or almost entirely solid,0750trans
+1390,Entirely or almost entirely solid,0438long
+1391,Entirely or almost entirely solid,0438trans
+1392,Entirely or almost entirely solid,0720_1long
+1393,Entirely or almost entirely solid,0720_1trans
+1394,Entirely or almost entirely solid,0934long
+1395,Entirely or almost entirely solid,0934trans
+1396,Entirely or almost entirely solid,1137_2long
+1397,Entirely or almost entirely solid,1137_2trans
+1398,Entirely or almost entirely solid,0353long
+1399,Mixed cystic_solid,0353trans
+1400,Entirely or almost entirely solid,0148long
+1401,Entirely or almost entirely solid,0148trans
+1402,Entirely or almost entirely solid,1116_1long
+1403,Entirely or almost entirely solid,1116_1trans
+1404,Entirely or almost entirely solid,0519long
+1405,Entirely or almost entirely solid,0519trans
+1406,Mixed cystic_solid,0503_2long
+1407,Entirely or almost entirely solid,0503_2trans
+1408,Entirely or almost entirely solid,0149long
+1409,Entirely or almost entirely solid,0149trans
+1410,Entirely or almost entirely solid,0483long
+1411,Entirely or almost entirely solid,0483trans
+1412,Entirely or almost entirely solid,1118long
+1413,Entirely or almost entirely solid,1118trans
+1414,Mixed cystic_solid,0242long
+1415,Entirely or almost entirely solid,0242trans
+1416,Entirely or almost entirely solid,0835long
+1417,Entirely or almost entirely solid,0835trans
+1418,Entirely or almost entirely solid,0456long
+1419,Entirely or almost entirely solid,0456trans
+1420,Cystic,1283long
+1421,Entirely or almost entirely solid,1283trans
+1422,Entirely or almost entirely solid,0443long
+1423,Entirely or almost entirely solid,0443trans
+1424,Entirely or almost entirely solid,1257long
+1425,Entirely or almost entirely solid,1257trans
+1426,Entirely or almost entirely solid,0926long
+1427,Entirely or almost entirely solid,0926trans
+1428,Entirely or almost entirely solid,0470long
+1429,Entirely or almost entirely solid,0470trans
+1430,Cystic,0714long
+1431,Entirely or almost entirely solid,0714trans
+1432,Entirely or almost entirely solid,0341long
+1433,Entirely or almost entirely solid,0341trans
+1434,Entirely or almost entirely solid,0556_1long
+1435,Entirely or almost entirely solid,0556_1trans
+1436,Entirely or almost entirely solid,0767long
+1437,Entirely or almost entirely solid,0767trans
+1438,Entirely or almost entirely solid,1127long
+1439,Entirely or almost entirely solid,1127trans
+1440,Entirely or almost entirely solid,0870left
+1441,Entirely or almost entirely solid,0870right
+1442,Entirely or almost entirely solid,0044long
+1443,Entirely or almost entirely solid,0044trans
+1444,Entirely or almost entirely solid,0264long
+1445,Entirely or almost entirely solid,0264trans
+1446,Entirely or almost entirely solid,0931long
+1447,Entirely or almost entirely solid,0931trans
+1448,Entirely or almost entirely solid,0145long
+1449,Entirely or almost entirely solid,0145trans
+1450,Entirely or almost entirely solid,1140long
+1451,Entirely or almost entirely solid,1140trans
+1452,Entirely or almost entirely solid,0616long
+1453,Entirely or almost entirely solid,0616trans
+1454,Entirely or almost entirely solid,1220long
+1455,Entirely or almost entirely solid,1220trans
+1456,Entirely or almost entirely solid,1030long
+1457,Entirely or almost entirely solid,1030trans
+1458,Entirely or almost entirely solid,0005_2long
+1459,Entirely or almost entirely solid,0005_2trans
+1460,Entirely or almost entirely solid,0116long
+1461,Entirely or almost entirely solid,0116trans
+1462,Entirely or almost entirely solid,0526_2long
+1463,Entirely or almost entirely solid,0526_2trans
+1464,Entirely or almost entirely solid,0575_2long
+1465,Entirely or almost entirely solid,0575_2trans
+1466,Entirely or almost entirely solid,0505left
+1467,Entirely or almost entirely solid,0505right
+1468,Entirely or almost entirely solid,0104long
+1469,Entirely or almost entirely solid,0104trans
+1470,Entirely or almost entirely solid,0429long
+1471,Entirely or almost entirely solid,0429trans
+1472,Entirely or almost entirely solid,0460long
+1473,Entirely or almost entirely solid,0460trans
+1474,Entirely or almost entirely solid,0774long
+1475,Entirely or almost entirely solid,0774trans
+1476,Entirely or almost entirely solid,0981_2long
+1477,Entirely or almost entirely solid,0981_2trans
+1478,Entirely or almost entirely solid,0442long
+1479,Entirely or almost entirely solid,0442trans
+1480,Entirely or almost entirely solid,1002long
+1481,Entirely or almost entirely solid,1002trans
+1482,Entirely or almost entirely solid,0905_2long
+1483,Entirely or almost entirely solid,0905_2trans
+1484,Entirely or almost entirely solid,0811long
+1485,Entirely or almost entirely solid,0811trans
+1486,Entirely or almost entirely solid,1334long
+1487,Entirely or almost entirely solid,1334trans
+1488,Entirely or almost entirely solid,0635long
+1489,Entirely or almost entirely solid,0635trans
+1490,Entirely or almost entirely solid,0830long
+1491,Entirely or almost entirely solid,0830trans
+1492,Entirely or almost entirely solid,0775_2long
+1493,Entirely or almost entirely solid,0775_2trans
+1494,Entirely or almost entirely solid,1194long
+1495,Entirely or almost entirely solid,1194trans
+1496,Entirely or almost entirely solid,1035long
+1497,Entirely or almost entirely solid,1035trans
+1498,Entirely or almost entirely solid,0379long
+1499,Entirely or almost entirely solid,0379trans
+1500,Entirely or almost entirely solid,0258long
+1501,Entirely or almost entirely solid,0258trans
+1502,Entirely or almost entirely solid,0549long
+1503,Entirely or almost entirely solid,0549trans
+1504,Entirely or almost entirely solid,0005_1long
+1505,Entirely or almost entirely solid,0005_1trans
+1506,Entirely or almost entirely solid,0587long
+1507,Entirely or almost entirely solid,0587trans
+1508,Entirely or almost entirely solid,1441long
+1509,Entirely or almost entirely solid,1441trans
+1510,Entirely or almost entirely solid,1044long
+1511,Entirely or almost entirely solid,1044trans
+1512,Entirely or almost entirely solid,0028_2long
+1513,Entirely or almost entirely solid,0028_2trans
+1514,Entirely or almost entirely solid,0957long
+1515,Entirely or almost entirely solid,0957trans
+1516,Entirely or almost entirely solid,0589long
+1517,Entirely or almost entirely solid,0589trans
+1518,Entirely or almost entirely solid,0577left
+1519,Entirely or almost entirely solid,0577right
+1520,Entirely or almost entirely solid,0276long
+1521,Entirely or almost entirely solid,0276trans
+1522,Entirely or almost entirely solid,0027long
+1523,Entirely or almost entirely solid,0027trans
+1524,Entirely or almost entirely solid,0555_1long
+1525,Entirely or almost entirely solid,0555_1trans
+1526,Entirely or almost entirely solid,0054long
+1527,Entirely or almost entirely solid,0054trans
+1528,Entirely or almost entirely solid,0338long
+1529,Entirely or almost entirely solid,0338trans
+1530,Entirely or almost entirely solid,0110_2long
+1531,Entirely or almost entirely solid,0110_2trans
+1532,Entirely or almost entirely solid,0978long
+1533,Entirely or almost entirely solid,0978trans
+1534,Entirely or almost entirely solid,1032long
+1535,Entirely or almost entirely solid,1032trans
+1536,Entirely or almost entirely solid,0625long
+1537,Entirely or almost entirely solid,0625trans
+1538,Entirely or almost entirely solid,0077long
+1539,Entirely or almost entirely solid,0077trans
+1540,Entirely or almost entirely solid,0428long
+1541,Entirely or almost entirely solid,0428trans
+1542,Entirely or almost entirely solid,0673_2left
+1543,Entirely or almost entirely solid,0673_2right
+1544,Entirely or almost entirely solid,0971long
+1545,Entirely or almost entirely solid,0971trans
+1546,Entirely or almost entirely solid,0600_2long
+1547,Entirely or almost entirely solid,0600_2trans
+1548,Entirely or almost entirely solid,1426long
+1549,Entirely or almost entirely solid,1426trans
+1550,Entirely or almost entirely solid,0636long
+1551,Entirely or almost entirely solid,0636trans
+1552,Entirely or almost entirely solid,0997long
+1553,Entirely or almost entirely solid,0997trans
+1554,Entirely or almost entirely solid,0984long
+1555,Entirely or almost entirely solid,0984trans
+1556,Entirely or almost entirely solid,0452_1long
+1557,Entirely or almost entirely solid,0452_1trans
+1558,Entirely or almost entirely solid,1075_1long
+1559,Entirely or almost entirely solid,1075_1trans
+1560,Entirely or almost entirely solid,0541long
+1561,Entirely or almost entirely solid,0541trans
+1562,Entirely or almost entirely solid,0300long
+1563,Entirely or almost entirely solid,0300trans
+1564,Entirely or almost entirely solid,0377_2long
+1565,Entirely or almost entirely solid,0377_2trans
+1566,Entirely or almost entirely solid,0718long
+1567,Entirely or almost entirely solid,0718trans
+1568,Entirely or almost entirely solid,0640long
+1569,Entirely or almost entirely solid,0640trans
+1570,Entirely or almost entirely solid,0787long
+1571,Entirely or almost entirely solid,0787trans
+1572,Entirely or almost entirely solid,0665long
+1573,Entirely or almost entirely solid,0665trans
+1574,Entirely or almost entirely solid,0580long
+1575,Entirely or almost entirely solid,0580trans
+1576,Entirely or almost entirely solid,0192long
+1577,Entirely or almost entirely solid,0192trans
+1578,Entirely or almost entirely solid,0764long
+1579,Entirely or almost entirely solid,0764trans
+1580,Entirely or almost entirely solid,0504long
+1581,Entirely or almost entirely solid,0504trans
+1582,Entirely or almost entirely solid,0327long
+1583,Entirely or almost entirely solid,0327trans
+1584,Entirely or almost entirely solid,0936long
+1585,Entirely or almost entirely solid,0936trans
+1586,Entirely or almost entirely solid,0897long
+1587,Entirely or almost entirely solid,0897trans
+1588,Entirely or almost entirely solid,1231long
+1589,Entirely or almost entirely solid,1231trans
+1590,Entirely or almost entirely solid,0773long
+1591,Entirely or almost entirely solid,0773trans
+1592,Entirely or almost entirely solid,0927_2long
+1593,Entirely or almost entirely solid,0927_2trans
+1594,Entirely or almost entirely solid,0842long
+1595,Entirely or almost entirely solid,0842trans
+1596,Entirely or almost entirely solid,1209long
+1597,Entirely or almost entirely solid,1209trans
+1598,Entirely or almost entirely solid,1251_1left
+1599,Entirely or almost entirely solid,1251_1right
+1600,Entirely or almost entirely solid,0322long
+1601,Entirely or almost entirely solid,0322trans
+1602,Entirely or almost entirely solid,0269long
+1603,Entirely or almost entirely solid,0269trans
+1604,Entirely or almost entirely solid,0913long
+1605,Entirely or almost entirely solid,0913trans
+1606,Entirely or almost entirely solid,0076long
+1607,Entirely or almost entirely solid,0076trans
+1608,Entirely or almost entirely solid,0098long
+1609,Entirely or almost entirely solid,0098trans
+1610,Entirely or almost entirely solid,0942long
+1611,Entirely or almost entirely solid,0942trans
+1612,Entirely or almost entirely solid,0466long
+1613,Entirely or almost entirely solid,0466trans
+1614,Entirely or almost entirely solid,0463long
+1615,Entirely or almost entirely solid,0463trans
+1616,Entirely or almost entirely solid,0821long
+1617,Entirely or almost entirely solid,0821trans
+1618,Entirely or almost entirely solid,0085long
+1619,Entirely or almost entirely solid,0085trans
+1620,Entirely or almost entirely solid,0476long
+1621,Entirely or almost entirely solid,0476trans
+1622,Entirely or almost entirely solid,1396long
+1623,Entirely or almost entirely solid,1396trans
+1624,Entirely or almost entirely solid,0820long
+1625,Entirely or almost entirely solid,0820trans
+1626,Entirely or almost entirely solid,0421long
+1627,Entirely or almost entirely solid,0421trans
+1628,Entirely or almost entirely solid,1205long
+1629,Entirely or almost entirely solid,1205trans
+1630,Entirely or almost entirely solid,1369long
+1631,Entirely or almost entirely solid,1369trans
+1632,Entirely or almost entirely solid,0786long
+1633,Entirely or almost entirely solid,0786trans
+1634,Entirely or almost entirely solid,0650long
+1635,Entirely or almost entirely solid,0650trans
+1636,Entirely or almost entirely solid,0260_1long
+1637,Entirely or almost entirely solid,0260_1trans
+1638,Entirely or almost entirely solid,0241left
+1639,Entirely or almost entirely solid,0241right
+1640,Entirely or almost entirely solid,1292long
+1641,Entirely or almost entirely solid,1292trans
+1642,Entirely or almost entirely solid,0392_1long
+1643,Entirely or almost entirely solid,0392_1trans
+1644,Entirely or almost entirely solid,0983_2long
+1645,Entirely or almost entirely solid,0983_2trans
+1646,Entirely or almost entirely solid,0270long
+1647,Entirely or almost entirely solid,0270trans
+1648,Entirely or almost entirely solid,0010_2long
+1649,Entirely or almost entirely solid,0010_2trans
+1650,Entirely or almost entirely solid,0480long
+1651,Entirely or almost entirely solid,0480trans
+1652,Entirely or almost entirely solid,1272_1long
+1653,Entirely or almost entirely solid,1272_1trans
+1654,Entirely or almost entirely solid,0525_2long
+1655,Entirely or almost entirely solid,0525_2trans
+1656,Entirely or almost entirely solid,1274long
+1657,Entirely or almost entirely solid,1274trans
+1658,Entirely or almost entirely solid,0186left
+1659,Entirely or almost entirely solid,0186right
+1660,Entirely or almost entirely solid,1390_2long
+1661,Entirely or almost entirely solid,1390_2trans
+1662,Entirely or almost entirely solid,0761long
+1663,Entirely or almost entirely solid,0761trans
+1664,Entirely or almost entirely solid,1459long
+1665,Entirely or almost entirely solid,1459trans
+1666,Entirely or almost entirely solid,1028_2long
+1667,Entirely or almost entirely solid,1028_2trans
+1668,Entirely or almost entirely solid,1124long
+1669,Entirely or almost entirely solid,1124trans
+1670,Entirely or almost entirely solid,1012long
+1671,Entirely or almost entirely solid,1012trans
+1672,Entirely or almost entirely solid,0554long
+1673,Entirely or almost entirely solid,0554trans
+1674,Entirely or almost entirely solid,0797long
+1675,Entirely or almost entirely solid,0797trans
+1676,Entirely or almost entirely solid,0457long
+1677,Entirely or almost entirely solid,0457trans
+1678,Entirely or almost entirely solid,0247long
+1679,Entirely or almost entirely solid,0247trans
+1680,Entirely or almost entirely solid,1234long
+1681,Entirely or almost entirely solid,1234trans
+1682,Entirely or almost entirely solid,0082_2long
+1683,Entirely or almost entirely solid,0082_2trans
+1684,Entirely or almost entirely solid,0716long
+1685,Entirely or almost entirely solid,0716trans
+1686,Entirely or almost entirely solid,0892long
+1687,Entirely or almost entirely solid,0892trans
+1688,Entirely or almost entirely solid,1076long
+1689,Entirely or almost entirely solid,1076trans
+1690,Entirely or almost entirely solid,0530long
+1691,Entirely or almost entirely solid,0530trans
+1692,Entirely or almost entirely solid,1173long
+1693,Entirely or almost entirely solid,1173trans
+1694,Entirely or almost entirely solid,0366long
+1695,Entirely or almost entirely solid,0366trans
+1696,Entirely or almost entirely solid,0401_2long
+1697,Entirely or almost entirely solid,0401_2trans
+1698,Entirely or almost entirely solid,0377_3long
+1699,Entirely or almost entirely solid,0377_3trans
+1700,Entirely or almost entirely solid,1461long
+1701,Entirely or almost entirely solid,1461trans
+1702,Entirely or almost entirely solid,1107long
+1703,Entirely or almost entirely solid,1107trans
+1704,Entirely or almost entirely solid,0775_1long
+1705,Entirely or almost entirely solid,0775_1trans
+1706,Entirely or almost entirely solid,0557long
+1707,Entirely or almost entirely solid,0557trans
+1708,Entirely or almost entirely solid,0094long
+1709,Entirely or almost entirely solid,0094trans
+1710,Entirely or almost entirely solid,1395left
+1711,Entirely or almost entirely solid,1395right
+1712,Entirely or almost entirely solid,0270_2long
+1713,Entirely or almost entirely solid,0270_2trans
+1714,Entirely or almost entirely solid,0074long
+1715,Entirely or almost entirely solid,0074trans
+1716,Entirely or almost entirely solid,0812long
+1717,Entirely or almost entirely solid,0812trans
+1718,Entirely or almost entirely solid,1417_2long
+1719,Entirely or almost entirely solid,1417_2trans
+1720,Entirely or almost entirely solid,0524long
+1721,Entirely or almost entirely solid,0524trans
+1722,Entirely or almost entirely solid,0381long
+1723,Entirely or almost entirely solid,0381trans
+1724,Entirely or almost entirely solid,0520long
+1725,Entirely or almost entirely solid,0520trans
+1726,Entirely or almost entirely solid,1286long
+1727,Entirely or almost entirely solid,1286trans
+1728,Entirely or almost entirely solid,0441long
+1729,Entirely or almost entirely solid,0441trans
+1730,Entirely or almost entirely solid,0029long
+1731,Entirely or almost entirely solid,0029trans
+1732,Entirely or almost entirely solid,0204left
+1733,Entirely or almost entirely solid,0204right
+1734,Entirely or almost entirely solid,0765long
+1735,Entirely or almost entirely solid,0765trans
+1736,Entirely or almost entirely solid,0955long
+1737,Entirely or almost entirely solid,0955trans
+1738,Entirely or almost entirely solid,1439_1long
+1739,Entirely or almost entirely solid,1439_1trans
+1740,Entirely or almost entirely solid,0547long
+1741,Entirely or almost entirely solid,0547trans
+1742,Entirely or almost entirely solid,1115long
+1743,Entirely or almost entirely solid,1115trans
+1744,Entirely or almost entirely solid,0516_1long
+1745,Entirely or almost entirely solid,0516_1trans
+1746,Entirely or almost entirely solid,1144left
+1747,Entirely or almost entirely solid,1144right
+1748,Entirely or almost entirely solid,0622long
+1749,Entirely or almost entirely solid,0622trans
+1750,Entirely or almost entirely solid,0703long
+1751,Entirely or almost entirely solid,0703trans
+1752,Entirely or almost entirely solid,0228long
+1753,Entirely or almost entirely solid,0228trans
+1754,Entirely or almost entirely solid,0980long
+1755,Entirely or almost entirely solid,0980trans
+1756,Entirely or almost entirely solid,0045_2long
+1757,Entirely or almost entirely solid,0045_2trans
+1758,Entirely or almost entirely solid,0112_2long
+1759,Entirely or almost entirely solid,0112_2trans
+1760,Entirely or almost entirely solid,0599_2long
+1761,Entirely or almost entirely solid,0599_2trans
+1762,Entirely or almost entirely solid,1418long
+1763,Entirely or almost entirely solid,1418trans
+1764,Entirely or almost entirely solid,0799long
+1765,Entirely or almost entirely solid,0799trans
+1766,Entirely or almost entirely solid,1157long
+1767,Entirely or almost entirely solid,1157trans
+1768,Entirely or almost entirely solid,0399_2long
+1769,Entirely or almost entirely solid,0399_2trans
+1770,Entirely or almost entirely solid,1062long
+1771,Entirely or almost entirely solid,1062trans
+1772,Entirely or almost entirely solid,0462long
+1773,Entirely or almost entirely solid,0462trans
+1774,Entirely or almost entirely solid,0411long
+1775,Entirely or almost entirely solid,0411trans
+1776,Entirely or almost entirely solid,0834long
+1777,Entirely or almost entirely solid,0834trans
+1778,Entirely or almost entirely solid,0633long
+1779,Entirely or almost entirely solid,0633trans
+1780,Entirely or almost entirely solid,1302long
+1781,Entirely or almost entirely solid,1302trans
+1782,Entirely or almost entirely solid,0743long
+1783,Entirely or almost entirely solid,0743trans
+1784,Entirely or almost entirely solid,1001long
+1785,Entirely or almost entirely solid,1001trans
+1786,Entirely or almost entirely solid,1049long
+1787,Entirely or almost entirely solid,1049trans
+1788,Entirely or almost entirely solid,0947left
+1789,Entirely or almost entirely solid,0947right
+1790,Entirely or almost entirely solid,1080long
+1791,Entirely or almost entirely solid,1080trans
+1792,Entirely or almost entirely solid,0793_2long
+1793,Entirely or almost entirely solid,0793_2trans
+1794,Entirely or almost entirely solid,0201long
+1795,Entirely or almost entirely solid,0201trans
+1796,Entirely or almost entirely solid,0816_1long
+1797,Entirely or almost entirely solid,0816_1trans
+1798,Entirely or almost entirely solid,0078_2long
+1799,Entirely or almost entirely solid,0078_2trans
+1800,Entirely or almost entirely solid,1298long
+1801,Entirely or almost entirely solid,1298trans
+1802,Entirely or almost entirely solid,0525_1long
+1803,Entirely or almost entirely solid,0525_1trans
+1804,Entirely or almost entirely solid,0435long
+1805,Entirely or almost entirely solid,0435trans
+1806,Entirely or almost entirely solid,1017long
+1807,Entirely or almost entirely solid,1017trans
+1808,Entirely or almost entirely solid,0011_2long
+1809,Entirely or almost entirely solid,0011_2trans
+1810,Entirely or almost entirely solid,0412long
+1811,Entirely or almost entirely solid,0412trans
+1812,Entirely or almost entirely solid,0584_1long
+1813,Entirely or almost entirely solid,0584_1trans
+1814,Entirely or almost entirely solid,0175long
+1815,Entirely or almost entirely solid,0175trans
+1816,Entirely or almost entirely solid,0288long
+1817,Entirely or almost entirely solid,0288trans
+1818,Entirely or almost entirely solid,0446long
+1819,Entirely or almost entirely solid,0446trans
+1820,Entirely or almost entirely solid,0737long
+1821,Entirely or almost entirely solid,0737trans
+1822,Entirely or almost entirely solid,1299long
+1823,Entirely or almost entirely solid,1299trans
+1824,Entirely or almost entirely solid,1419long
+1825,Entirely or almost entirely solid,1419trans
+1826,Entirely or almost entirely solid,1033_1left
+1827,Entirely or almost entirely solid,1033_1right
+1828,Entirely or almost entirely solid,0355_2long
+1829,Entirely or almost entirely solid,0355_2trans
+1830,Entirely or almost entirely solid,0017_2long
+1831,Entirely or almost entirely solid,0017_2trans
+1832,Entirely or almost entirely solid,0544_2long
+1833,Entirely or almost entirely solid,0544_2trans
+1834,Entirely or almost entirely solid,0345long
+1835,Entirely or almost entirely solid,0345trans
+1836,Entirely or almost entirely solid,0647long
+1837,Entirely or almost entirely solid,0647trans
+1838,Entirely or almost entirely solid,0103long
+1839,Entirely or almost entirely solid,0103trans
+1840,Entirely or almost entirely solid,0816_2long
+1841,Entirely or almost entirely solid,0816_2trans
+1842,Entirely or almost entirely solid,0024long
+1843,Entirely or almost entirely solid,0024trans
+1844,Entirely or almost entirely solid,1277_2long
+1845,Entirely or almost entirely solid,1277_2trans
+1846,Entirely or almost entirely solid,0451_2long
+1847,Entirely or almost entirely solid,0451_2trans
+1848,Entirely or almost entirely solid,1093_1long
+1849,Entirely or almost entirely solid,1093_1trans
+1850,Entirely or almost entirely solid,0215long
+1851,Entirely or almost entirely solid,0215trans
+1852,Entirely or almost entirely solid,0073long
+1853,Entirely or almost entirely solid,0073trans
+1854,Entirely or almost entirely solid,1208long
+1855,Entirely or almost entirely solid,1208trans
+1856,Entirely or almost entirely solid,0744_2long
+1857,Entirely or almost entirely solid,0744_2trans
+1858,Entirely or almost entirely solid,0089_2long
+1859,Entirely or almost entirely solid,0089_2trans
+1860,Entirely or almost entirely solid,0973_2left
+1861,Entirely or almost entirely solid,0973_2right
+1862,Entirely or almost entirely solid,1201long
+1863,Entirely or almost entirely solid,1201trans
+1864,Entirely or almost entirely solid,1467long
+1865,Entirely or almost entirely solid,1467trans
+1866,Entirely or almost entirely solid,0850long
+1867,Entirely or almost entirely solid,0850trans
+1868,Entirely or almost entirely solid,0612long
+1869,Entirely or almost entirely solid,0612trans
+1870,Entirely or almost entirely solid,0753long
+1871,Entirely or almost entirely solid,0753trans
+1872,Entirely or almost entirely solid,0292long
+1873,Entirely or almost entirely solid,0292trans
+1874,Entirely or almost entirely solid,0512left
+1875,Entirely or almost entirely solid,0512right
+1876,Entirely or almost entirely solid,1243_1long
+1877,Entirely or almost entirely solid,1243_1trans
+1878,Entirely or almost entirely solid,0864long
+1879,Entirely or almost entirely solid,0864trans
+1880,Entirely or almost entirely solid,0540long
+1881,Entirely or almost entirely solid,0540trans
+1882,Entirely or almost entirely solid,0678long
+1883,Entirely or almost entirely solid,0678trans
+1884,Entirely or almost entirely solid,0962long
+1885,Entirely or almost entirely solid,0962trans
+1886,Entirely or almost entirely solid,1163long
+1887,Entirely or almost entirely solid,1163trans
+1888,Entirely or almost entirely solid,1041_1long
+1889,Entirely or almost entirely solid,1041_1trans
+1890,Entirely or almost entirely solid,0136_2long
+1891,Entirely or almost entirely solid,0136_2trans
+1892,Entirely or almost entirely solid,0123_2long
+1893,Entirely or almost entirely solid,0123_2trans
+1894,Entirely or almost entirely solid,0496long
+1895,Entirely or almost entirely solid,0496trans
+1896,Entirely or almost entirely solid,0847long
+1897,Entirely or almost entirely solid,0847trans
+1898,Entirely or almost entirely solid,0702long
+1899,Entirely or almost entirely solid,0702trans
+1900,Entirely or almost entirely solid,0680long
+1901,Entirely or almost entirely solid,0680trans
+1902,Entirely or almost entirely solid,0290_1long
+1903,Entirely or almost entirely solid,0290_1trans
+1904,Entirely or almost entirely solid,0886long
+1905,Entirely or almost entirely solid,0886trans
+1906,Entirely or almost entirely solid,1031long
+1907,Entirely or almost entirely solid,1031trans
+1908,Entirely or almost entirely solid,1192long
+1909,Entirely or almost entirely solid,1192trans
+1910,Entirely or almost entirely solid,0831_2long
+1911,Entirely or almost entirely solid,0831_2trans
+1912,Entirely or almost entirely solid,0206long
+1913,Entirely or almost entirely solid,0206trans
+1914,Entirely or almost entirely solid,0661long
+1915,Entirely or almost entirely solid,0661trans
+1916,Entirely or almost entirely solid,0601long
+1917,Entirely or almost entirely solid,0601trans
+1918,Entirely or almost entirely solid,1258_1long
+1919,Entirely or almost entirely solid,1258_1trans
+1920,Entirely or almost entirely solid,1033_2long
+1921,Entirely or almost entirely solid,1033_2trans
+1922,Entirely or almost entirely solid,0739long
+1923,Entirely or almost entirely solid,0739trans
+1924,Entirely or almost entirely solid,0323long
+1925,Entirely or almost entirely solid,0323trans
+1926,Entirely or almost entirely solid,1078long
+1927,Entirely or almost entirely solid,1078trans
+1928,Entirely or almost entirely solid,0333long
+1929,Entirely or almost entirely solid,0333trans
+1930,Entirely or almost entirely solid,0157long
+1931,Entirely or almost entirely solid,0157trans
+1932,Entirely or almost entirely solid,1228left
+1933,Entirely or almost entirely solid,1228right
+1934,Entirely or almost entirely solid,0745long
+1935,Entirely or almost entirely solid,0745trans
+1936,Entirely or almost entirely solid,0712long
+1937,Entirely or almost entirely solid,0712trans
+1938,Entirely or almost entirely solid,0057_1long
+1939,Entirely or almost entirely solid,0057_1trans
+1940,Entirely or almost entirely solid,1050long
+1941,Entirely or almost entirely solid,1050trans
+1942,Entirely or almost entirely solid,0901long
+1943,Entirely or almost entirely solid,0901trans
+1944,Entirely or almost entirely solid,0490long
+1945,Entirely or almost entirely solid,0490trans
+1946,Entirely or almost entirely solid,0539long
+1947,Entirely or almost entirely solid,0539trans
+1948,Entirely or almost entirely solid,1363long
+1949,Entirely or almost entirely solid,1363trans
+1950,Entirely or almost entirely solid,0021long
+1951,Entirely or almost entirely solid,0021trans
+1952,Entirely or almost entirely solid,0039long
+1953,Entirely or almost entirely solid,0039trans
+1954,Entirely or almost entirely solid,0893long
+1955,Entirely or almost entirely solid,0893trans
+1956,Entirely or almost entirely solid,0896long
+1957,Entirely or almost entirely solid,0896trans
+1958,Entirely or almost entirely solid,1235long
+1959,Entirely or almost entirely solid,1235trans
+1960,Entirely or almost entirely solid,0424long
+1961,Entirely or almost entirely solid,0424trans
+1962,Entirely or almost entirely solid,0933long
+1963,Entirely or almost entirely solid,0933trans
+1964,Entirely or almost entirely solid,1232long
+1965,Entirely or almost entirely solid,1232trans
+1966,Entirely or almost entirely solid,1098long
+1967,Entirely or almost entirely solid,1098trans
+1968,Entirely or almost entirely solid,0041_2long
+1969,Entirely or almost entirely solid,0041_2trans
+1970,Entirely or almost entirely solid,0265_3long
+1971,Entirely or almost entirely solid,0265_3trans
+1972,Entirely or almost entirely solid,1251_2long
+1973,Entirely or almost entirely solid,1251_2trans
+1974,Entirely or almost entirely solid,1136long
+1975,Entirely or almost entirely solid,1136trans
+1976,Entirely or almost entirely solid,0845long
+1977,Entirely or almost entirely solid,0845trans
+1978,Entirely or almost entirely solid,0164long
+1979,Entirely or almost entirely solid,0164trans
+1980,Entirely or almost entirely solid,0710long
+1981,Entirely or almost entirely solid,0710trans
+1982,Entirely or almost entirely solid,0921long
+1983,Entirely or almost entirely solid,0921trans
+1984,Entirely or almost entirely solid,0789long
+1985,Entirely or almost entirely solid,0789trans
+1986,Entirely or almost entirely solid,0855long
+1987,Entirely or almost entirely solid,0855trans
+1988,Entirely or almost entirely solid,0019long
+1989,Entirely or almost entirely solid,0019trans
+1990,Entirely or almost entirely solid,0137left
+1991,Entirely or almost entirely solid,0137right
+1992,Entirely or almost entirely solid,0275_1long
+1993,Entirely or almost entirely solid,0275_1trans
+1994,Entirely or almost entirely solid,1229_1left
+1995,Entirely or almost entirely solid,1229_1right
+1996,Entirely or almost entirely solid,1048_2long
+1997,Entirely or almost entirely solid,1048_2trans
+1998,Entirely or almost entirely solid,0993long
+1999,Entirely or almost entirely solid,0993trans
+2000,Entirely or almost entirely solid,1424long
+2001,Entirely or almost entirely solid,1424trans
+2002,Entirely or almost entirely solid,0199long
+2003,Entirely or almost entirely solid,0199trans
+2004,Entirely or almost entirely solid,1416long
+2005,Entirely or almost entirely solid,1416trans
+2006,Entirely or almost entirely solid,0645long
+2007,Entirely or almost entirely solid,0645trans
+2008,Entirely or almost entirely solid,0546long
+2009,Entirely or almost entirely solid,0546trans
+2010,Entirely or almost entirely solid,0018long
+2011,Entirely or almost entirely solid,0018trans
+2012,Entirely or almost entirely solid,0704long
+2013,Entirely or almost entirely solid,0704trans
+2014,Entirely or almost entirely solid,1093_2long
+2015,Entirely or almost entirely solid,1093_2trans
+2016,Entirely or almost entirely solid,1148long
+2017,Entirely or almost entirely solid,1148trans
+2018,Entirely or almost entirely solid,1307long
+2019,Entirely or almost entirely solid,1307trans
+2020,Entirely or almost entirely solid,0303long
+2021,Entirely or almost entirely solid,0303trans
+2022,Entirely or almost entirely solid,0028_1long
+2023,Entirely or almost entirely solid,0028_1trans
+2024,Entirely or almost entirely solid,0041_1long
+2025,Entirely or almost entirely solid,0041_1trans
+2026,Entirely or almost entirely solid,1195long
+2027,Entirely or almost entirely solid,1195trans
+2028,Entirely or almost entirely solid,1143left
+2029,Entirely or almost entirely solid,1143right
+2030,Entirely or almost entirely solid,1254long
+2031,Entirely or almost entirely solid,1254trans
+2032,Entirely or almost entirely solid,0863long
+2033,Entirely or almost entirely solid,0863trans
+2034,Entirely or almost entirely solid,1023long
+2035,Entirely or almost entirely solid,1023trans
+2036,Entirely or almost entirely solid,0887_2long
+2037,Entirely or almost entirely solid,0887_2trans
+2038,Entirely or almost entirely solid,1262long
+2039,Entirely or almost entirely solid,1262trans
+2040,Entirely or almost entirely solid,0535long
+2041,Entirely or almost entirely solid,0535trans
+2042,Entirely or almost entirely solid,0107long
+2043,Entirely or almost entirely solid,0107trans
+2044,Entirely or almost entirely solid,1090long
+2045,Entirely or almost entirely solid,1090trans
+2046,Entirely or almost entirely solid,1135_2long
+2047,Entirely or almost entirely solid,1135_2trans
+2048,Entirely or almost entirely solid,0273long
+2049,Entirely or almost entirely solid,0273trans
+2050,Entirely or almost entirely solid,0964long
+2051,Entirely or almost entirely solid,0964trans
+2052,Entirely or almost entirely solid,0948long
+2053,Entirely or almost entirely solid,0948trans
+2054,Entirely or almost entirely solid,1319long
+2055,Entirely or almost entirely solid,1319trans
+2056,Entirely or almost entirely solid,0664long
+2057,Entirely or almost entirely solid,0664trans
+2058,Entirely or almost entirely solid,0159long
+2059,Entirely or almost entirely solid,0159trans
+2060,Entirely or almost entirely solid,0495long
+2061,Entirely or almost entirely solid,0495trans
+2062,Entirely or almost entirely solid,1446long
+2063,Entirely or almost entirely solid,1446trans
+2064,Entirely or almost entirely solid,1020long
+2065,Entirely or almost entirely solid,1020trans
+2066,Entirely or almost entirely solid,0952long
+2067,Entirely or almost entirely solid,0952trans
+2068,Entirely or almost entirely solid,0299long
+2069,Entirely or almost entirely solid,0299trans
+2070,Entirely or almost entirely solid,0313long
+2071,Entirely or almost entirely solid,0313trans
+2072,Entirely or almost entirely solid,0266_1long
+2073,Entirely or almost entirely solid,0266_1trans
+2074,Entirely or almost entirely solid,1336long
+2075,Entirely or almost entirely solid,1336trans
+2076,Entirely or almost entirely solid,0235long
+2077,Entirely or almost entirely solid,0235trans
+2078,Entirely or almost entirely solid,0004long
+2079,Entirely or almost entirely solid,0004trans
+2080,Entirely or almost entirely solid,0119long
+2081,Entirely or almost entirely solid,0119trans
+2082,Entirely or almost entirely solid,1351long
+2083,Entirely or almost entirely solid,1351trans
+2084,Entirely or almost entirely solid,1016_2long
+2085,Entirely or almost entirely solid,1016_2trans
+2086,Entirely or almost entirely solid,0336long
+2087,Entirely or almost entirely solid,0336trans
+2088,Entirely or almost entirely solid,0694long
+2089,Entirely or almost entirely solid,0694trans
+2090,Entirely or almost entirely solid,0759long
+2091,Entirely or almost entirely solid,0759trans
+2092,Entirely or almost entirely solid,1412long
+2093,Entirely or almost entirely solid,1412trans
+2094,Entirely or almost entirely solid,0857left
+2095,Entirely or almost entirely solid,0857right
+2096,Entirely or almost entirely solid,1086long
+2097,Entirely or almost entirely solid,1086trans
+2098,Entirely or almost entirely solid,0727long
+2099,Entirely or almost entirely solid,0727trans
+2100,Entirely or almost entirely solid,0609long
+2101,Entirely or almost entirely solid,0609trans
+2102,Entirely or almost entirely solid,1197long
+2103,Entirely or almost entirely solid,1197trans
+2104,Entirely or almost entirely solid,1135_1long
+2105,Entirely or almost entirely solid,1135_1trans
+2106,Entirely or almost entirely solid,0803long
+2107,Entirely or almost entirely solid,0803trans
+2108,Entirely or almost entirely solid,0509long
+2109,Entirely or almost entirely solid,0509trans
+2110,Entirely or almost entirely solid,0594long
+2111,Entirely or almost entirely solid,0594trans
+2112,Entirely or almost entirely solid,0960long
+2113,Entirely or almost entirely solid,0960trans
+2114,Entirely or almost entirely solid,0408long
+2115,Entirely or almost entirely solid,0408trans
+2116,Entirely or almost entirely solid,1101_3long
+2117,Entirely or almost entirely solid,1101_3trans
+2118,Entirely or almost entirely solid,0687long
+2119,Entirely or almost entirely solid,0687trans
+2120,Entirely or almost entirely solid,0654long
+2121,Entirely or almost entirely solid,0654trans
+2122,Entirely or almost entirely solid,0778long
+2123,Entirely or almost entirely solid,0778trans
+2124,Entirely or almost entirely solid,0729left
+2125,Entirely or almost entirely solid,0729right
+2126,Entirely or almost entirely solid,0102long
+2127,Entirely or almost entirely solid,0102trans
+2128,Entirely or almost entirely solid,0526_1long
+2129,Entirely or almost entirely solid,0526_1trans
+2130,Entirely or almost entirely solid,1147long
+2131,Entirely or almost entirely solid,1147trans
+2132,Entirely or almost entirely solid,0837long
+2133,Entirely or almost entirely solid,0837trans
+2134,Entirely or almost entirely solid,0143long
+2135,Entirely or almost entirely solid,0143trans
+2136,Entirely or almost entirely solid,0249long
+2137,Entirely or almost entirely solid,0249trans
+2138,Entirely or almost entirely solid,0407long
+2139,Entirely or almost entirely solid,0407trans
+2140,Entirely or almost entirely solid,0627long
+2141,Entirely or almost entirely solid,0627trans
+2142,Entirely or almost entirely solid,0068long
+2143,Entirely or almost entirely solid,0068trans
+2144,Entirely or almost entirely solid,1139long
+2145,Entirely or almost entirely solid,1139trans
+2146,Entirely or almost entirely solid,0196long
+2147,Entirely or almost entirely solid,0196trans
+2148,Entirely or almost entirely solid,0819long
+2149,Entirely or almost entirely solid,0819trans
+2150,Entirely or almost entirely solid,0854long
+2151,Entirely or almost entirely solid,0854trans
+2152,Entirely or almost entirely solid,0880long
+2153,Entirely or almost entirely solid,0880trans
+2154,Entirely or almost entirely solid,0290_2long
+2155,Entirely or almost entirely solid,0290_2trans
+2156,Entirely or almost entirely solid,0418_2long
+2157,Entirely or almost entirely solid,0418_2trans
+2158,Entirely or almost entirely solid,1100long
+2159,Entirely or almost entirely solid,1100trans
+2160,Entirely or almost entirely solid,1193long
+2161,Entirely or almost entirely solid,1193trans
+2162,Entirely or almost entirely solid,0217long
+2163,Entirely or almost entirely solid,0217trans
+2164,Entirely or almost entirely solid,0038long
+2165,Entirely or almost entirely solid,0038trans
+2166,Entirely or almost entirely solid,0833_1long
+2167,Entirely or almost entirely solid,0833_1trans
+2168,Entirely or almost entirely solid,0095long
+2169,Entirely or almost entirely solid,0095trans
+2170,Entirely or almost entirely solid,0965long
+2171,Entirely or almost entirely solid,0965trans
+2172,Entirely or almost entirely solid,0335_1long
+2173,Entirely or almost entirely solid,0335_1trans
+2174,Entirely or almost entirely solid,0638long
+2175,Entirely or almost entirely solid,0638trans
+2176,Entirely or almost entirely solid,0174_2left
+2177,Entirely or almost entirely solid,0174_2right
+2178,Entirely or almost entirely solid,0691long
+2179,Entirely or almost entirely solid,0691trans
+2180,Entirely or almost entirely solid,0899_2long
+2181,Entirely or almost entirely solid,0899_2trans
+2182,Entirely or almost entirely solid,0592long
+2183,Entirely or almost entirely solid,0592trans
+2184,Entirely or almost entirely solid,1024long
+2185,Entirely or almost entirely solid,1024trans
+2186,Entirely or almost entirely solid,1041_2long
+2187,Entirely or almost entirely solid,1041_2trans
+2188,Entirely or almost entirely solid,0749long
+2189,Entirely or almost entirely solid,0749trans
+2190,Entirely or almost entirely solid,0538left
+2191,Entirely or almost entirely solid,0538right
+2192,Entirely or almost entirely solid,0923_2long
+2193,Entirely or almost entirely solid,0923_2trans
+2194,Entirely or almost entirely solid,0802long
+2195,Entirely or almost entirely solid,0802trans
+2196,Entirely or almost entirely solid,0272left
+2197,Entirely or almost entirely solid,0272right
+2198,Entirely or almost entirely solid,0023_1long
+2199,Entirely or almost entirely solid,0023_1trans
+2200,Entirely or almost entirely solid,0478long
+2201,Entirely or almost entirely solid,0478trans
+2202,Entirely or almost entirely solid,0296_2long
+2203,Entirely or almost entirely solid,0296_2trans
+2204,Entirely or almost entirely solid,1022long
+2205,Entirely or almost entirely solid,1022trans
+2206,Entirely or almost entirely solid,0938long
+2207,Entirely or almost entirely solid,0938trans
+2208,Entirely or almost entirely solid,0090_2left
+2209,Entirely or almost entirely solid,0090_2right
+2210,Entirely or almost entirely solid,0351long
+2211,Entirely or almost entirely solid,0351trans
+2212,Entirely or almost entirely solid,0486_1long
+2213,Entirely or almost entirely solid,0486_1trans
+2214,Entirely or almost entirely solid,1119long
+2215,Entirely or almost entirely solid,1119trans
+2216,Entirely or almost entirely solid,1223long
+2217,Entirely or almost entirely solid,1223trans
+2218,Entirely or almost entirely solid,0927_1long
+2219,Entirely or almost entirely solid,0927_1trans
