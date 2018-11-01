@@ -1,4 +1,4 @@
-RADIOLOGIST PREDICTIONS (data_readers_0 - 7):
+RADIOLOGIST COMPOSITION PREDICTIONS (data_readers_0 - 7):
 
   (groundtruth)              cystic/spongiform   mixed_cystic  solid (prediction)  
   cystic/spongiform          0.4659          	 0.3409        0.1932       
@@ -6,10 +6,7 @@ RADIOLOGIST PREDICTIONS (data_readers_0 - 7):
   solid                      0.01                0.04          0.95   
 
 
-
-
-
-MODEL PREDICTIONS:
+MODEL COMPOSTIION PREDICTIONS:
 
   (groundtruth)              spongiform   mixed_cystic  solid (prediction)  
   spongiform          	     0.53448276 	 0.3362069     0.12931034      
@@ -19,4 +16,31 @@ MODEL PREDICTIONS:
 
 threw out 'cystic', 'cannot tell' classes in this model
 
+
+
+
+RADIOLOGIST ECHOGENICITY PREDICTIONS (data_readers_0 - 7):
+
+  (groundtruth)              cat 1 (hyper/iso)    cat 2 (mild hypo)  cat 3 (very hypo)  (predictions)
+  cat 1 (hyper/iso)          0.85227273     	  0.125              0.00909091  
+  cat 2 (mixed hypo)         0.375      	  0.575              0.05   
+  cat 3 (very hypo)          0.0625     	  0.40625            0.53125   
+   
+
+RADIOLOGIST SHAPE PREDICTIONS (data_readers_0 - 7):
+
+  (groundtruth)		     not taller than wide	taller than wide (predictions)
+  not taller than wide	     0.90767045 		0.09232955
+  taller than wide           0.48863636                 0.51136364
+
+
+RADIOLOGIST MARGIN PREDICTIONS (data_readers_0 - 7): --> need to figure out the mapping from margin categries to 
+
+  (groundtruth) 	0 		1 	2		3		(predictions)
+	0		0.7630814  	0.      0.20639535 	0.03052326
+	1               0               0       0               0
+	2	        0.36538462      0.      0.43269231      0.20192308
+	3               0               0       0               0
+
+ 
 
