@@ -9,10 +9,9 @@ RADIOLOGIST COMPOSITION PREDICTIONS (data_readers_0 - 7):
 MODEL COMPOSTIION PREDICTIONS:
 
   (groundtruth)              spongiform   mixed_cystic  solid (prediction)  
-  spongiform          	     0.53448276 	 0.3362069     0.12931034      
-  mixed_cystic               0.12317328 	 0.6263048     0.25052192
-  solid                      0.02971768 	 0.12630015    0.84398217 
-
+  spongiform          	     0.51725138   0.37068966    0.11206897      
+  mixed_cystic               0.10229645   0.6263048     0.27139875
+  solid                      0.01634473   0.08766716    0.89598811 
 
 threw out 'cystic', 'cannot tell' classes in this model
 
