@@ -9,22 +9,24 @@ from imgaug import augmenters
 from scipy.misc import imread
 from sklearn.model_selection import StratifiedKFold
 
-data_path_og = "./data.csv"
-data_path = "./data.csv" #"/home/adithya/Desktop/Adithya_Thyroid_Deep_Learning/radiologist_data/cleaned_labels/relabelled_composition.csv"
+#data_path_og = "./data.csv"
+data_path = "/.data.csv" #"/home/adithya/Desktop/Adithya_Thyroid_Deep_Learning/radiologist_data/cleaned_labels/relabelled_composition.csv"
 
 images_dir = "/home/adithya/Desktop/Adithya_Thyroid_Deep_Learning/data/Nodules-originals"
 mask_dir = "/home/adithya/Desktop/Adithya_Thyroid_Deep_Learning/data/Nodule-masks"
+
+
 
 total_folds = 10
 
 
 #TODO: balance folds
-def fold_data(fold, test):
+def fold_data(fold):
     df = pd.read_csv(data_path)
     df.fillna(0, inplace=True)
 
     ids = df["ID"]
-    df_echo = df["Echogenicity"]
+    df_echo = df["Echogenecity"]
 
 
     label_dict = {
@@ -37,24 +39,18 @@ def fold_data(fold, test):
 
 
     labels = list()
-    for label in df_echo:
+    for label in df_compos:
 	labels.append(label_dict[label])
    
     ids = ids.values.tolist()
 
-   
-    new_ids = list()
-    new_labels = list()
 
-    for i in range(len(labels)):
-	if(labels[i] != -1):
-		new_ids.append(ids[i])
-		new_labels.append(labels[i])
-		
+    print("YEET")
+    print(len(labels), len(ids))
     
 
-    all_labels_dict = dict(zip(new_ids, new_labels))
-    all_pids = list()
+    all_labels_dict = dict(zip(ids, labels))
+
    
     all_files = glob(images_dir + "/*.PNG")
     all_masks = glob(mask_dir + "/*.PNG")
@@ -67,8 +63,7 @@ def fold_data(fold, test):
     for f_path, m_path in zip(all_files, all_masks):
         pid = fname2pid(f_path)
 
-       # print("pid: ", pid)
-        if pid in new_ids:
+        if pid in ids:
         	image = np.expand_dims(np.array(imread(f_path, flatten=False, mode="F")).astype(np.float32),axis=-1)
         	mask = np.expand_dims(np.array(imread(m_path, flatten=False, mode="F")).astype(np.float32),axis=-1)
         	image = np.append(image, mask, axis=2)
@@ -76,32 +71,16 @@ def fold_data(fold, test):
 
 		X.append(image)
 		y.append(all_labels_dict[pid])
-                all_pids.append(pid)
 
-               
     X = np.array(X)
     X /= 255.
     X -= 0.5
     X *= 2.
 
     y = np.array(y)
-
-    print("X: ", X.shape)
-    print("y: ", y.shape)
-    print(len(all_pids))   
- 
-    skf = StratifiedKFold(n_splits=total_folds, random_state=total_folds)
+    skf = StratifiedKFold(n_splits=total_folds, random_state=5)
 
     splits = skf.split(X,y)
-
-
-
-
-
-#   print(X_train.shape, X_test.shape)
-#   print(y_train.shape, y_test.shape, new_ids.shape)
-
-
 
     i = 0
     fold_pids = []
@@ -112,13 +91,9 @@ def fold_data(fold, test):
 	if(i == fold):
 		y_train = get_one_hot(y_train, 3)
 		y_test = get_one_hot(y_test, 3)
-		fold_pids = np.array(all_pids)[test_index]
+		fold_pids = np.array(ids)[test_index]
                 
-      #         print(X_train.shape, X_test.shape)               
-      #         print(y_train.shape, y_test.shape, new_ids.shape)
- 
-		if(test): return X_train, y_train, X_test, y_test, fold_pids
-		else: return X_train, y_train, X_test, y_test
+		return X_train, y_train, X_test, y_test, fold_pids
 
         i += 1
 
@@ -271,4 +246,4 @@ def fname2pid(fname):
 #def fname2pid(fname):
  #   return fname.split("/")[-1].split(".")[0] + fname.split("/")[-1].split(".")[1]
 
-#fold_data2(5)
+fold_data2(5)

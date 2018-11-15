@@ -9,16 +9,15 @@ from keras import backend as K
 from keras.models import load_model
 from sklearn.metrics import roc_auc_score, roc_curve
 
-from data import fold_data, fold_pids
+from data import fold_data
 from focal_loss import focal_loss
 
-checkpoints_dir = (
-    "/home/adithya/Desktop/Adithya_Thyroid_Deep_Learning/deep-thyroid-nodules-2/checkpoints/<FOLD>/"
+checkpoints_dir = ("/home/adithya/Desktop/Adithya_Thyroid_Deep_Learning/ECHOGENECITY/deep-feature-extraction-threeclass/checkpoints/<FOLD>/"
 )
 
 weights_file = "weights.h5"
 batch_size = 128
-nb_categories = 1
+nb_categories = 3
 
 
 def predict(fold, test_cases=True):
@@ -27,16 +26,16 @@ def predict(fold, test_cases=True):
 
     net = load_model(weights_path, custom_objects={"focal_loss_fixed": focal_loss()})
 
-    x_train, y_train, x_test, y_test = fold_data(fold)
+    x_train, y_train, x_test, y_test, fold_pids = fold_data(fold, True)
 
     if test_cases:
         preds = net.predict(x_test, batch_size=batch_size, verbose=1)
-        y = y_test[0]
+	y = y_test
     else:
         preds = net.predict(x_train, batch_size=batch_size, verbose=1)
-        y = y_train["out_cancer"]
-
-    return preds[0], y
+        y = y_train
+   
+    return preds, y, fold_pids  
 
 
 def test(folds):
@@ -46,9 +45,10 @@ def test(folds):
     pid_fold = []
 
     for f in range(folds):
-        preds, t = predict(f, folds)
-        predictions = np.vstack((predictions, preds))
-        pids.extend(fold_pids(f))
+        preds, t, fold_pids = predict(f, folds)
+        
+	predictions = np.vstack((predictions, preds))
+        pids.extend(fold_pids)
         targets.extend(t)
         pid_fold.extend([f] * len(t))
 
@@ -57,11 +57,13 @@ def test(folds):
     cases_predictions = {}
     cases_targets = {}
     cases_folds = {}
+  
     for i in range(len(pids)):
         pid = pids[i]
         prev_pred = cases_predictions.get(pid, np.zeros(nb_categories))
-        preds = predictions[i]
-        cases_predictions[pid] = prev_pred + preds
+	preds = predictions[i]
+ 
+	cases_predictions[pid] = prev_pred + preds
         cases_targets[pid] = targets[i]
         cases_folds[pid] = pid_fold[i]
 
@@ -69,23 +71,56 @@ def test(folds):
 
     y_pred = []
     y_true = []
+    
+    y_pred = np.zeros([len(cases_predictions), nb_categories])
+    y_true = np.zeros([len(cases_predictions), nb_categories])
+ 
     y_id = []
     y_fold = []
+    i = 0
+
     for pid in cases_predictions:
-        y_pred.append(cases_predictions[pid][0])
-        y_true.append(cases_targets[pid])
+        
+        y_pred[i] = cases_predictions[pid]
+        y_true[i] = cases_targets[pid]        
+
         y_id.append(pid)
         y_fold.append(cases_folds[pid])
+        i = i + 1
 
     with open("../results/data/predictions_cv.csv", "w") as csvfile:
         csvwriter = csv.writer(csvfile)
-        csvwriter.writerow(["ID", "Prediction", "Cancer", "Fold"])
+        csvwriter.writerow(["ID", "Prediction", "Composition", "Fold"])
         for pid, prediction, gt, f in zip(y_id, y_pred, y_true, y_fold):
             pid = pid.lstrip("0")
             csvwriter.writerow([pid, prediction, gt[0], f])
 
-    plot_roc(y_true, y_pred)
 
+    print("Y TRUE SHAPE: ", y_true.shape)
+    print("Y PRED SHAPE: ", y_pred.shape)
+
+    print("TOTAL AUC: ", roc_auc_score(y_true, y_pred))
+
+    labels = np.argmax(y_true, axis=1)
+    predictions = np.argmax(y_pred, axis=1)   
+
+    confusion_matrix = np.zeros([nb_categories, nb_categories])
+    for k in range(labels.shape[0]):
+    	for i in range(nb_categories):
+	    for j in range(nb_categories):
+		if(labels[k] == i and predictions[k] == j): confusion_matrix[i,j] = confusion_matrix[i,j] + 1		    
+   
+    
+    print("rows are true value, columns are predicted value")
+
+    vec = np.sum(confusion_matrix,axis=1, keepdims=True)
+    confusion_matrix_preds = np.divide(confusion_matrix, vec)
+
+
+    print(confusion_matrix_preds)
+    print(np.sum(confusion_matrix_preds, axis=1))
+    print(confusion_matrix)
+	     
 
 def plot_roc(y_true, y_pred, figname="roc_cv.png"):
     fpr, tpr, thresholds = roc_curve(y_true, y_pred)
@@ -119,7 +154,7 @@ if __name__ == "__main__":
     sess = tf.Session(config=config)
     K.set_session(sess)
 
-    device = "/gpu:0"# + sys.argv[1]
+    #device = "/gpu:0"# + sys.argv[1]
   
-    with tf.device(device):
-	  test(10)
+    #with tf.device(device):
+    test(10)

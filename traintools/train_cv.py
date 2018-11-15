@@ -8,17 +8,19 @@ from keras.callbacks import TensorBoard
 from keras.optimizers import RMSprop
 from sklearn.metrics import roc_auc_score
 
-from data import fold_data, augment, augment_2, augment_4
+from data import fold_data, augment#, augment_2, augment_4
 from model import multitask_cnn, loss_dict, loss_weights_dict
+#from model_resnet import multitask_resnet, loss_dict, loss_weights_dict
 
 checkpoints_dir = (
-    "/home/adithya/Desktop/Adithya_Thyroid_Deep_Learning/deep-thyroid-nodules-2/checkpoints/<FOLD>/"
+    "/home/adithya/Desktop/Adithya_Thyroid_Deep_Learning/ECHOGENECITY/deep-feature-extraction-threeclass/checkpoints/<FOLD>/"
 )
-logs_dir = "/home/adithya/Desktop/Adithya_Thyroid_Deep_Learning/deep-thyroid-nodules-2/logs/<FOLD>/"
+logs_dir = "/home/adithya/Desktop/Adithya_Thyroid_Deep_Learning/ECHOGENECITY/deep-feature-extraction-threeclass/logs/<FOLD>/"
 
 batch_size = 128
 epochs = 250
 base_lr = 0.001
+nb_categories = 3
 
 
 def train(fold):
@@ -30,13 +32,13 @@ def train(fold):
     if not os.path.exists(fold_logs_dir):
         os.makedirs(fold_logs_dir)
 
-    x_train, y_train, x_test, y_test = fold_data(fold)
+    x_train, y_train, x_test, y_test = fold_data(fold, False)
 
     print("Training and validation data processed.")
     print("Training data shape: {}".format(len(x_train)))
     print("Test data shape: {}".format(len(x_test)))
-
-    model = multitask_cnn()
+    
+    model = multitask_cnn(nb_categories)
 
     optimizer = RMSprop(lr=base_lr)
 
@@ -52,35 +54,28 @@ def train(fold):
     )
 
     callbacks = [training_log]
+    
+    print("Y test compos: ", y_test.shape)
+    print("Y train compos: ", y_train.shape)
 
-    y_train_cancer = y_train["out_cancer"]
-    y_test_cancer = y_test[0]
 
+   # print("Y_TEST SHAPE: ", y_test_compos.shape)
+    
     for e in range(epochs):
-        x_train_augmented = augment_4(x_train)
-        #print("X_TRAIN_AUGMENTED TYPE: ", np.dtype(x_train_augmented))
-        model.fit(
-            x={"thyroid_input": x_train_augmented},
-            y=y_train,
-            validation_data=(x_test, y_test),
-            batch_size=batch_size,
-            epochs=e + 1,
-            initial_epoch=e,
-            shuffle=True,
-            callbacks=callbacks,
-        )
 
-        if np.mod(e + 1, 10) == 0:
-            y_pred = model.predict(x_train, batch_size=batch_size, verbose=1)
-            auc_train = roc_auc_score(y_train_cancer, y_pred[0])
-            y_pred = model.predict(x_test, batch_size=batch_size, verbose=1)
-            auc_test = roc_auc_score(y_test_cancer, y_pred[0])
-            with open(os.path.join(fold_logs_dir, "auc.txt"), "a") as auc_file:
-                auc_file.write("{},{}\n".format(auc_train, auc_test))
+        x_train_augmented = augment(x_train)
+
+	model.fit(x={"thyroid_input": x_train_augmented}, y=y_train,class_weight={0:1.0, 1:627.0/565.0, 2:627.0/27.0}, validation_data=(x_test, y_test), batch_size=batch_size, epochs=e + 1, initial_epoch=e, shuffle=True, callbacks=callbacks)
+
 
     model.save(os.path.join(fold_checkpoints_dir, "weights.h5"))
 
     print("Training fold {} completed.".format(fold))
+
+
+def get_one_hot(targets, nb_classes):
+    res = np.eye(nb_classes)[np.array(targets).reshape(-1)]
+    return res.reshape(list(targets.shape)+[nb_classes])
 
 
 if __name__ == "__main__":
@@ -92,11 +87,8 @@ if __name__ == "__main__":
     K.set_session(sess)
     
     train_fold = 0
-    device = "/gpu:0"# + sys.argv[1]
     
     while(train_fold <=9):
 	print("current train fold: ", train_fold)
-	with tf.device(device):
-            train(train_fold)
+        train(train_fold)
         train_fold = train_fold + 1
-       
