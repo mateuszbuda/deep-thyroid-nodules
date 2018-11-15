@@ -26,6 +26,14 @@ RADIOLOGIST ECHOGENICITY PREDICTIONS (data_readers_0 - 7):
   cat 3 (very hypo)          0.0625     	  0.40625            0.53125   
    
 
+
+[[0.75119617 0.24720893 0.0015949 ]
+ [0.30619469 0.64955752 0.04424779]
+ [0.07407407 0.62962963 0.2962963 ]]
+
+
+
+
 RADIOLOGIST SHAPE PREDICTIONS (data_readers_0 - 7):
 
   (groundtruth)		     not taller than wide	taller than wide (predictions)
