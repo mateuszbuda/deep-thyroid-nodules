@@ -40,12 +40,14 @@ RADIOLOGIST SHAPE PREDICTIONS (data_readers_0 - 7):
 
 
 RADIOLOGIST MARGIN PREDICTIONS (data_readers_0 - 7): --> need to figure out the mapping from margin categries to 
+[[0.7578125  0.2109375  0.03125   ]
+ [0.36538462 0.43269231 0.20192308]
+ [0.70833333 0.25       0.04166667]]
 
-  (groundtruth) 	0 		1 	2		3		(predictions)
-	0		0.7630814  	0.      0.20639535 	0.03052326
-	1               0               0       0               0
-	2	        0.36538462      0.      0.43269231      0.20192308
-	3               0               0       0               0
+
+MODEL MARGIN PREDICTIONS
+
+
 
  
 
