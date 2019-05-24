@@ -48,3 +48,5 @@ RUN protoc object_detection/protos/*.proto --python_out=.
 
 ENV PYTHONPATH /tensorflow/models/research:/tensorflow/models/research/slim
 
+WORKDIR /workspace
+
