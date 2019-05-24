@@ -4,6 +4,19 @@
 ## Reproduction steps
 
 
+### Docker
+
+```
+docker build -t deep-thyroid-nodules .
+```
+
+```
+docker run --rm -it -v `pwd`:/workspace deep-thyroid-nodules
+```
+
+To access data folders from docker, use `-v` option.
+
+
 ### Prerequisites
 
 1. Mount network drive with data and copy the folder with images `WashU/Nodules` to local drive
