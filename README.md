@@ -11,7 +11,7 @@ docker build -t deep-thyroid-nodules .
 ```
 
 ```
-docker run --rm -it -v `pwd`:/workspace deep-thyroid-nodules
+docker run --rm -it -v /tmp/.X11-unix:/tmp/.X11-unix -v `pwd`:/workspace -e DISPLAY deep-thyroid-nodules
 ```
 
 To access data folders from docker, use `-v` option.
