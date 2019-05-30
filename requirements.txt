@@ -9,3 +9,6 @@ scikit-image==0.14.0
 imageio==2.3.0
 medpy==0.3.0
 opencv-python==3.3.0.10
+imgaug==0.2.5
+pypng==0.0.18
+pandas==0.22.0
