@@ -42,4 +42,4 @@ docker build -t deep-thyroid-nodules-classification -f Dockerfile.classification
 nvidia-docker run --rm -v /path/to/data/:/data/ deep-thyroid-nodules-classification
 ```
 
-Predictions for malignancy are in `./predictions_test.csv`
+Predictions for malignancy are in `/data/predictions_test.csv`
