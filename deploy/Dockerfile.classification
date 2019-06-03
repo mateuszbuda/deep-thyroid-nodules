@@ -1,0 +1,47 @@
+FROM nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04
+
+# http://bugs.python.org/issue19846
+ENV LANG C.UTF-8
+# https://github.com/docker-library/python/issues/147
+ENV PYTHONIOENCODING UTF-8
+ENV EDITOR vim
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+	ca-certificates \
+	curl \
+	netbase \
+	wget \
+	git \
+	openssh-client \
+	ssh \
+	vim \
+&& rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+	python \
+	python-dev \
+	python-pip \
+	python-setuptools \
+	python-tk \
+	python-lxml \
+	python-pil \
+	protobuf-compiler \
+&& rm -rf /var/lib/apt/lists/*
+
+RUN pip install --upgrade pip
+
+WORKDIR /workspace
+
+COPY requirements.txt ./
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+
+WORKDIR /workspace/classification
+
+COPY ./data.py ./
+COPY ./focal_loss.py ./
+COPY ./test_99test.py ./
+COPY ./weights.h5 ./
+
+CMD python test_99test.py 1
