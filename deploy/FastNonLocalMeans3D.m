@@ -3,7 +3,7 @@ function out = FastNonLocalMeans3D( V, sigma, beta, rs, rc, ps, flag, block )
 % the features space. The full algorithm is discussed in detail in the
 % following paper:
 %
-%      A. Tristán-Vega, V. García-Pérez, S. Aja-Fernández, C.-F. Westin
+%      A. TristÃ¡n-Vega, V. GarcÃ­a-PÃ©rez, S. Aja-FernÃ¡ndez, C.-F. Westin
 %      "Efficient and robust nonlocal means denoising of MR data based on
 %      salient features matching"
 %      Computer Methods and Programs in Biomedicine, vol. 105, pp. 131-144
@@ -40,7 +40,7 @@ function out = FastNonLocalMeans3D( V, sigma, beta, rs, rc, ps, flag, block )
 %    flag:  Must be either 'gaussian' (the default) or 'rician'. In the
 %           latter case, the weighted average is performed over the squared
 %           pixels, and the filtered value is computed as
-%           sqrt(mu-2·sigma^2) so that the estimate becomes unbiased.
+%           sqrt(mu-2Â·sigma^2) so that the estimate becomes unbiased.
 %    block: This second flag tells the algorithm if the computation of the
 %           weights within the search window must be done with a loop (0,
 %           the default since it seems to be faster for the default search
@@ -298,3 +298,33 @@ I   = convn( I, gx, 'same' );
 I   = convn( I, gy, 'same' );
 out = convn( I, gz, 'same' );
 return;
+
+
+%--------------------------------------------------------------------------
+%
+% https://www.mathworks.com/matlabcentral/fileexchange/43901-fast-and-robust-nonlocal-means-denoising
+%
+% LICENSE:
+%
+% Copyright (c) 2013, Antonio
+% All rights reserved.
+
+% Redistribution and use in source and binary forms, with or without
+% modification, are permitted provided that the following conditions are met:
+
+% * Redistributions of source code must retain the above copyright notice, this
+%   list of conditions and the following disclaimer.
+
+% * Redistributions in binary form must reproduce the above copyright notice,
+%   this list of conditions and the following disclaimer in the documentation
+%   and/or other materials provided with the distribution
+% THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+% AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+% IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+% DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+% FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+% DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+% SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+% CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+% OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+% OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
