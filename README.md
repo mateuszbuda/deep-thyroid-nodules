@@ -23,7 +23,7 @@ To access data folders from docker, use `-v` option.
 
     ```
     sudo mkdir -p /media/maciej/thyroid/WashU/Nodules
-    sudo mount -t cifs -o user=mb527 //duhsnas-pri.dhe.duke.edu/dusom_railabs/All_Staff/maciej-collaborators/thyroid /media/maciej/thyroid/
+    sudo mount -t cifs -o user=mb123 //duhsnas-url/path/to/data/thyroid /media/maciej/thyroid/
     cp -r /media/maciej/thyroid/WashU/Nodules /media/maciej/Thyroid/thyroid-nodules/
     ```
 
